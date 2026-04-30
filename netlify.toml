@@ -1,0 +1,4 @@
+# Netlify: pubblica dalla root del repo e rigenera sempre il Tailwind compilato al deploy.
+[build]
+  command = "npm ci && npm run build:css"
+  publish = "."

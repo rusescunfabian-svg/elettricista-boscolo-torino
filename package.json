@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "Landing one-page Premium Industrial — elettricistaboscolo.it",
   "scripts": {
+    "build": "npm run build:css",
     "build:css": "tailwindcss -i ./src/input.css -o ./dist/styles.css --minify",
     "watch:css": "tailwindcss -i ./src/input.css -o ./dist/styles.css --watch"
   },
