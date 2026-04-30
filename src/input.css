@@ -14,6 +14,9 @@
     .animate-pulse-soft {
       animation: none !important;
     }
+    .squish-btn:active {
+      transform: none;
+    }
   }
 
   ::selection {
@@ -36,5 +39,14 @@
         rgba(59, 67, 80, 0.05) 50%,
         rgba(59, 67, 80, 0.15) 100%
       );
+  }
+
+  .squish-btn {
+    transition: transform 0.14s cubic-bezier(0.34, 1.56, 0.64, 1);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .squish-btn:active {
+    transform: scale(0.93);
   }
 }
