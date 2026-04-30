@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html class="scroll-smooth scroll-pt-20" lang="it">
+<html class="scroll-smooth scroll-pt-20 md:scroll-pt-24" lang="it">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#030712" />
     <title>Allarme e videocamere Torino | Impianto sicurezza Boscolo</title>
     <meta
       name="description"
-        content="Antifurto e telecamere su Torino e dintorni: linee dedicate e punto sul quadro a posto, così antifurto e telecamere hanno tensione affidabile quando li installa il vostro fornitore — Boscolo al 335 637 982."
+      content="Antifurto e telecamere su Torino e dintorni: linee dedicate e punto sul quadro a posto, così antifurto e telecamere hanno tensione affidabile quando li installa il vostro fornitore — Boscolo al 335 637 982."
     />
     <link rel="canonical" href="https://www.elettricistaboscolo.it/allarmi-sicurezza/" />
     <meta name="robots" content="index,follow" />
     <link rel="stylesheet" href="../dist/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,600;0,700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,600;0,700&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -29,49 +33,91 @@
       }
     </script>
   </head>
-  <body class="touch-manipulation bg-ink pb-28 pr-14 font-sans text-base antialiased text-slate-200 sm:pb-8 md:pr-[4.5rem]">
-    <aside class="fixed inset-y-0 right-0 z-[90] flex w-14 flex-col items-center justify-center gap-3 border-l border-white/10 bg-graphite/95 py-6 backdrop-blur-sm sm:w-[4.25rem]" aria-label="Chiama WhatsApp">
-      <a href="tel:+39335637982" class="squish-btn flex aspect-square w-11 animate-pulse-soft flex-col items-center justify-center gap-0.5 rounded-2xl bg-accent text-[10px] font-bold uppercase text-white ring-2 ring-white/25 md:w-12">Chiama</a>
-      <a href="https://wa.me/39335637982?text=Impianto%20allarme%20Torino" target="_blank" rel="noopener noreferrer" class="squish-btn flex aspect-square w-11 flex-col items-center justify-center rounded-2xl border border-emerald-400/70 bg-emerald-700 text-[10px] font-bold uppercase text-emerald-50 md:w-12">WA</a>
+  <body class="touch-manipulation relative min-h-screen bg-transparent pb-28 pr-14 font-sans text-base antialiased text-slate-300 sm:pb-8 md:pr-[4.5rem]">
+    <div class="ambient-bg pointer-events-none fixed inset-0 -z-30" aria-hidden="true"></div>
+    <div class="ambient-grid pointer-events-none fixed inset-0 -z-20" aria-hidden="true"></div>
+
+    <aside
+      class="fixed inset-y-0 right-0 z-[90] flex w-14 flex-col items-center justify-center gap-3 border-l border-white/15 bg-gradient-to-b from-slate-900/92 via-graphite/95 to-slate-950/92 py-6 shadow-[0_0_60px_rgba(0,0,0,.5)] backdrop-blur-xl sm:w-[4.25rem]"
+      aria-label="Chiama WhatsApp"
+    >
+      <a
+        href="tel:+39335637982"
+        class="squish-btn flex aspect-square w-11 animate-pulse-soft flex-col items-center justify-center gap-0.5 rounded-2xl bg-accent text-[10px] font-bold uppercase text-white ring-2 ring-white/25 md:w-12"
+        >Chiama</a>
+      <a
+        href="https://wa.me/39335637982?text=Impianto%20allarme%20Torino"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="squish-btn flex aspect-square w-11 flex-col items-center justify-center rounded-2xl border border-emerald-400/70 bg-emerald-700 text-[10px] font-bold uppercase text-emerald-50 md:w-12"
+        >WA</a>
     </aside>
-    <header class="sticky top-0 z-50 border-b border-white/10 bg-ink/95 backdrop-blur">
-      <div class="mx-auto flex max-w-3xl justify-between px-3 py-3 sm:px-5">
-        <a href="../" class="font-bold tracking-wider text-white">← Boscolo Torino</a>
-        <a href="tel:+39335637982" class="text-sm font-bold text-accent">335 637 982</a>
+
+    <header class="sticky top-0 z-50 glass-nav">
+      <div class="mx-auto flex max-w-3xl items-center justify-between gap-3 px-3 py-3 sm:px-5">
+        <a href="../" class="flex flex-col leading-tight text-white hover:text-electric"><span class="font-display font-bold uppercase tracking-[0.12em]">← Boscolo Torino</span><span class="text-[10px] text-slate-400">homepage</span></a>
+        <a href="tel:+39335637982" class="rounded-xl bg-accent/15 px-3 py-1.5 font-display text-sm font-bold tabular-nums text-white ring-1 ring-accent/40 hover:bg-accent/25">335 637 982</a>
       </div>
     </header>
-    <main class="mx-auto max-w-3xl px-3 py-10 sm:px-5">
-      <nav class="mb-8 text-[13px] text-silver" aria-label="Percorso">
-        <a href="../" class="text-accent underline-offset-4 hover:underline">Home</a>
+
+    <main class="relative mx-auto max-w-3xl px-3 py-12 sm:px-5 lg:py-16">
+      <nav class="mb-10 text-[13px] text-slate-500" aria-label="Percorso">
+        <a href="../" class="text-electric underline-offset-4 hover:underline">Home</a>
         /
-        Allarmi e sicurezza
+        <span class="text-slate-400">Allarmi e sicurezza</span>
       </nav>
-      <h1 class="text-balance text-2xl font-bold text-white sm:text-3xl">Allarmi antintrusione e videosorveglianza a Torino: parte elettrica dimensionata correttamente</h1>
-      <figure class="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-graphite">
-        <img
-          src="../assets/images/cat-sicurezza-cctv.png"
-          alt="Illustrazione stilizzata: telecamera e antifurto, senza persone — Boscolo sicurezza"
-          width="1200"
-          height="675"
-          class="h-auto w-full object-cover"
-          loading="eager"
-        />
-      </figure>
-      <p class="mt-6 leading-relaxed text-silver">
-        Un <strong class="text-white">allarme o una telecamera</strong> comportano più assorbimento e predisposizioni rispetto a una presa normale: alimentatori, eventuali dorsali dati verso DVR o NVR, punto presa tecnico nell&apos;<strong class="text-white">armadio elettrico</strong>. La Boscolo cura il <strong class="text-white">quadro e i cavi fino dove servono gli apparecchi</strong>, con protezioni e sezioni adeguate così quando l&apos;installatore dell&apos;antifurto o della TVCC arriva sul posto trova energia affidabile alla parete giusta.
-      </p>
-      <p class="mt-4 leading-relaxed text-silver">
-        Ci capita spesso quando state rifacendo i muri dopo un furto o per una ristrutturazione completa e volete predisporre cassette e passaggi mentre il cartongesso è aperto. Se invece la linea <strong class="text-white">saltava già prima</strong> della sicurezza, valutiamo prima il quadro anche con il <a href="../pronto-intervento/" class="text-accent underline underline-offset-2">pronto intervento</a>.
-      </p>
-      <p class="mt-4 leading-relaxed text-silver">
-        L&apos;obiettivo è <strong class="text-white">alimentazioni dedicate e sicure</strong>, con quadro leggibile dopo anni; evitiamo di caricare sulla stessa protezione illuminazioni o prese quando non sono più compatibili con i nuovi assorbimenti delle telecamere. Per intervento sul quadro generale vedere anche <a href="../impianti-elettrici/" class="text-accent underline underline-offset-2">impianti elettrici</a>.
-      </p>
-      <p class="mt-10">
-        <a href="tel:+39335637982" class="inline-flex min-h-[52px] items-center justify-center rounded-xl bg-accent px-6 py-4 font-bold text-white">Sopralluogo sicurezza: 335 637 982</a>
-      </p>
+
+      <article class="glass-section overflow-hidden rounded-[1.75rem] p-8 sm:p-11">
+        <h1 class="section-heading text-balance text-2xl font-bold text-white sm:text-3xl md:text-[2rem]">
+          Allarmi antintrusione e videosorveglianza a Torino: parte elettrica dimensionata correttamente
+        </h1>
+
+        <figure class="glass-section mt-8 overflow-hidden rounded-2xl !bg-black/35 p-1">
+          <img
+            src="../assets/images/cat-sicurezza-cctv.png"
+            alt="Illustrazione stilizzata: telecamera e antifurto, senza persone — Boscolo sicurezza"
+            width="1200"
+            height="675"
+            class="h-auto w-full rounded-xl object-cover"
+            loading="eager"
+          />
+        </figure>
+
+        <div class="mt-8 space-y-4 text-[15px] leading-relaxed text-slate-300">
+          <p>
+            Un <strong class="text-white">allarme o una telecamera</strong> comportano più assorbimento e predisposizioni rispetto a una presa normale: alimentatori, eventuali dorsali dati verso DVR o NVR, punto presa tecnico nell&apos;
+            <strong class="text-white">armadio elettrico</strong>. La Boscolo cura il <strong class="text-white">quadro e i cavi fino dove servono gli apparecchi</strong>, con protezioni e sezioni adeguate così quando l&apos;installatore dell&apos;antifurto o della TVCC arriva sul posto trova energia affidabile alla parete giusta.
+          </p>
+          <p>
+            Ci capita spesso quando state rifacendo i muri dopo un furto o per una ristrutturazione completa e volete predisporre cassette e passaggi mentre il cartongesso è aperto. Se invece la linea <strong class="text-white">saltava già prima</strong> della sicurezza, valutiamo prima il quadro anche con il
+            <a href="../pronto-intervento/" class="text-electric underline decoration-electric/30 underline-offset-[3px] hover:text-white">pronto intervento</a>.
+          </p>
+          <p>
+            L&apos;obiettivo è <strong class="text-white">alimentazioni dedicate e sicure</strong>, con quadro leggibile dopo anni; evitiamo di caricare sulla stessa protezione illuminazioni o prese quando non sono più compatibili con i nuovi assorbimenti delle telecamere. Per intervento sul quadro generale vedere anche
+            <a href="../impianti-elettrici/" class="text-electric underline decoration-electric/30 underline-offset-[3px] hover:text-white">impianti elettrici</a>.
+          </p>
+        </div>
+
+        <p class="mt-11">
+          <a href="tel:+39335637982" class="inline-flex min-h-[54px] w-full items-center justify-center rounded-2xl bg-accent px-6 py-4 text-[15px] font-bold uppercase tracking-wide text-white shadow-glow hover:bg-accent-hover sm:w-auto">
+            Sopralluogo sicurezza: 335 637 982
+          </a>
+        </p>
+      </article>
     </main>
-    <footer class="border-t border-white/10 py-6 text-center text-[11px] text-silver">
-      <a href="../privacy.html">Privacy</a>
+
+    <footer class="relative mt-16 border-t border-white/[0.08] bg-gradient-to-b from-black via-[#060b14] to-[#030712] px-4 pb-12 pt-10 text-center">
+      <div class="gradient-divider mx-auto mb-8 max-w-md opacity-80"></div>
+      <a href="../" class="font-display text-[13px] font-bold uppercase tracking-[0.2em] text-white hover:text-electric">← Boscolo homepage</a>
+      <nav class="mt-5 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[12px]" aria-label="Link sito">
+        <a href="../pronto-intervento/" class="text-slate-500 hover:text-white">Pronto intervento</a>
+        <a href="../impianti-elettrici/" class="text-slate-500 hover:text-white">Impianti</a>
+        <a href="../allarmi-sicurezza/" class="text-slate-500 hover:text-white">Allarmi</a>
+        <a href="../assistenza-caldaie/" class="text-slate-500 hover:text-white">Caldaie</a>
+        <a href="../torino-e-provincia/" class="text-slate-500 hover:text-white">Provincia</a>
+      </nav>
+      <div class="mt-6"><a href="../privacy.html" class="text-[11px] text-slate-600 hover:text-slate-400">Privacy</a></div>
+      <p class="mt-4 text-[10px] uppercase tracking-[0.12em] text-slate-600">elettricistaboscolo.it · Torino</p>
     </footer>
   </body>
 </html>

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html class="scroll-smooth scroll-pt-20" lang="it">
+<html class="scroll-smooth scroll-pt-20 md:scroll-pt-24" lang="it">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#030712" />
     <title>Torino e tutta provincia · Elettricista Boscolo</title>
     <meta
       name="description"
@@ -13,7 +14,10 @@
     <link rel="stylesheet" href="../dist/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,600;0,700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,600;0,700&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -45,9 +49,18 @@
       }
     </script>
   </head>
-  <body class="touch-manipulation bg-ink pb-28 pr-14 font-sans text-base antialiased text-slate-200 sm:pb-8 md:pr-[4.5rem]">
-    <aside class="fixed inset-y-0 right-0 z-[90] flex w-14 flex-col items-center justify-center gap-3 border-l border-white/10 bg-graphite/95 py-6 backdrop-blur-sm sm:w-[4.25rem]" aria-label="Chiama WhatsApp">
-      <a href="tel:+39335637982" class="squish-btn flex aspect-square w-11 animate-pulse-soft flex-col items-center justify-center gap-0.5 rounded-2xl bg-accent text-[10px] font-bold uppercase text-white ring-2 ring-white/25 md:w-12">Chiama</a>
+  <body class="touch-manipulation relative min-h-screen bg-transparent pb-28 pr-14 font-sans text-base antialiased text-slate-300 sm:pb-8 md:pr-[4.5rem]">
+    <div class="ambient-bg pointer-events-none fixed inset-0 -z-30" aria-hidden="true"></div>
+    <div class="ambient-grid pointer-events-none fixed inset-0 -z-20" aria-hidden="true"></div>
+
+    <aside
+      class="fixed inset-y-0 right-0 z-[90] flex w-14 flex-col items-center justify-center gap-3 border-l border-white/15 bg-gradient-to-b from-slate-900/92 via-graphite/95 to-slate-950/92 py-6 shadow-[0_0_60px_rgba(0,0,0,.5)] backdrop-blur-xl sm:w-[4.25rem]"
+      aria-label="Chiama WhatsApp"
+    >
+      <a
+        href="tel:+39335637982"
+        class="squish-btn flex aspect-square w-11 animate-pulse-soft flex-col items-center justify-center gap-0.5 rounded-2xl bg-accent text-[10px] font-bold uppercase text-white ring-2 ring-white/25 md:w-12"
+        >Chiama</a>
       <a
         href="https://wa.me/39335637982?text=Richiesta%20elettricista%20provincia%20Torino%20Boscolo"
         target="_blank"
@@ -55,48 +68,82 @@
         class="squish-btn flex aspect-square w-11 flex-col items-center justify-center rounded-2xl border border-emerald-400/70 bg-emerald-700 text-[10px] font-bold uppercase text-emerald-50 md:w-12"
         >WA</a>
     </aside>
-    <header class="sticky top-0 z-50 border-b border-white/10 bg-ink/95 backdrop-blur">
-      <div class="mx-auto flex max-w-3xl justify-between px-3 py-3 sm:px-5">
-        <a href="../" class="font-bold tracking-wider text-white">← Boscolo Torino</a>
-        <a href="tel:+39335637982" class="text-sm font-bold text-accent">335 637 982</a>
+
+    <header class="sticky top-0 z-50 glass-nav">
+      <div class="mx-auto flex max-w-3xl items-center justify-between gap-3 px-3 py-3 sm:px-5">
+        <a href="../" class="flex flex-col leading-tight text-white hover:text-electric"><span class="font-display font-bold uppercase tracking-[0.12em]">← Boscolo Torino</span><span class="text-[10px] text-slate-400">homepage</span></a>
+        <a href="tel:+39335637982" class="rounded-xl bg-accent/15 px-3 py-1.5 font-display text-sm font-bold tabular-nums text-white ring-1 ring-accent/40 hover:bg-accent/25">335 637 982</a>
       </div>
     </header>
-    <main class="mx-auto max-w-3xl px-3 py-10 sm:px-5">
-      <nav class="mb-8 text-[13px] text-silver" aria-label="Percorso">
-        <a href="../" class="text-accent underline-offset-4 hover:underline">Home</a>
+
+    <main class="relative mx-auto max-w-3xl px-3 py-12 sm:px-5 lg:py-16">
+      <nav class="mb-10 text-[13px] text-slate-500" aria-label="Percorso">
+        <a href="../" class="text-electric underline-offset-4 hover:underline">Home</a>
         /
-        Provincia Torino
+        <span class="text-slate-400">Provincia Torino</span>
       </nav>
-      <figure class="mb-10 overflow-hidden rounded-2xl border border-white/10 bg-graphite">
-        <img
-          src="../assets/images/cat-tutta-provincia.png"
-          alt="Paesaggio del Piemonte: Boscolo raggiunge comuni lungo la Provincia di Torino"
-          width="1600"
-          height="1067"
-          class="aspect-[3/2] w-full object-cover"
-          decoding="async"
-        />
-      </figure>
-      <h1 class="text-balance text-2xl font-bold text-white sm:text-3xl">Torino città e Provincia di Torino: un solo numero, stesso mestiere</h1>
-      <p class="mt-6 leading-relaxed text-silver">
-        Non un call center né un network anonimo ma <strong class="text-white">mestieri imparati in cantiere</strong>: perché quel differenziale scatta sempre la domenica, perché dall&apos;<strong class="text-white">autorimessa o dal laboratorio vicino casa</strong> parte la pompa ma sulla linea al quadro succede ancora prima qualcos&apos;altro da misurare.
-      </p>
-      <p class="mt-4 leading-relaxed text-silver">
-        Nel <strong class="text-white">comune di Torino</strong> capitiamo ogni giorno nei quartieri: casa dopo ristrutturazione, condomìni, officine sulla trifase quando il problema è sulla linea che arriva al quadro.
-      </p>
-      <p class="mt-4 leading-relaxed text-silver">
-        Fuori dal centro urbano capitale, nei comuni della <strong class="text-white">Provincia di Torino</strong>, <strong class="text-white">concordiamo sempre al telefono</strong> giorno e fascia perché contano chilometri e il fatto che in città possiamo avere già interventi urgenti la stessa giornata.
-      </p>
-      <p class="mt-4 leading-relaxed text-silver">
-        Qui trovate le stesse cose delle altre pagine elettrico: il <a href="../pronto-intervento/" class="text-accent underline underline-offset-2">pronto intervento quando puzza dal quadro</a>, gli <a href="../impianti-elettrici/" class="text-accent underline underline-offset-2">impianti completi dopo ristrutturazione</a>, le predisposizioni <a href="../allarmi-sicurezza/" class="text-accent underline underline-offset-2">sicurezza e telecamere</a>, infine ciò che tocca alla <a href="../assistenza-caldaie/" class="text-accent underline underline-offset-2">caldaia lato tensione</a>.
-      </p>
-      <p class="mt-10 flex flex-wrap gap-3">
-        <a href="tel:+39335637982" class="inline-flex min-h-[52px] items-center justify-center rounded-xl bg-accent px-6 py-4 font-bold text-white">Chiama ora 335 637 982</a>
-        <a href="mailto:assistenzacaldaiepiemonte@gmail.com?subject=Elettricista%20provincia%20Torino" class="inline-flex min-h-[52px] items-center justify-center rounded-xl border border-white/20 px-6 py-4 font-semibold text-white">Email scritta</a>
-      </p>
+
+      <article class="glass-section overflow-hidden rounded-[1.75rem] p-8 sm:p-11">
+        <figure class="glass-section mb-10 overflow-hidden rounded-2xl !bg-black/35 p-1">
+          <img
+            src="../assets/images/cat-tutta-provincia.png"
+            alt="Paesaggio del Piemonte: Boscolo raggiunge comuni lungo la Provincia di Torino"
+            width="1600"
+            height="1067"
+            class="aspect-[3/2] w-full rounded-xl object-cover"
+            decoding="async"
+          />
+        </figure>
+
+        <h1 class="section-heading text-balance text-2xl font-bold text-white sm:text-3xl md:text-[2rem]">
+          Torino città e Provincia di Torino: un solo numero, stesso mestiere
+        </h1>
+
+        <div class="mt-8 space-y-4 text-[15px] leading-relaxed text-slate-300">
+          <p>
+            Non un call center né un network anonimo ma <strong class="text-white">mestieri imparati in cantiere</strong>: perché quel differenziale scatta sempre la domenica, perché dall&apos;<strong class="text-white">autorimessa o dal laboratorio vicino casa</strong> parte la pompa ma sulla linea al quadro succede ancora prima qualcos&apos;altro da misurare.
+          </p>
+          <p>
+            Nel <strong class="text-white">comune di Torino</strong> capitiamo ogni giorno nei quartieri: casa dopo ristrutturazione, condomìni, officine sulla trifase quando il problema è sulla linea che arriva al quadro.
+          </p>
+          <p>
+            Fuori dal centro urbano capitale, nei comuni della <strong class="text-white">Provincia di Torino</strong>, <strong class="text-white">concordiamo sempre al telefono</strong> giorno e fascia perché contano chilometri e il fatto che in città possiamo avere già interventi urgenti la stessa giornata.
+          </p>
+          <p>
+            Qui trovate le stesse cose delle altre pagine elettrico: il
+            <a href="../pronto-intervento/" class="text-electric underline decoration-electric/30 underline-offset-[3px] hover:text-white">pronto intervento quando puzza dal quadro</a>, gli
+            <a href="../impianti-elettrici/" class="text-electric underline decoration-electric/30 underline-offset-[3px] hover:text-white">impianti completi dopo ristrutturazione</a>, le predisposizioni
+            <a href="../allarmi-sicurezza/" class="text-electric underline decoration-electric/30 underline-offset-[3px] hover:text-white">sicurezza e telecamere</a>, infine ciò che tocca alla
+            <a href="../assistenza-caldaie/" class="text-electric underline decoration-electric/30 underline-offset-[3px] hover:text-white">caldaia lato tensione</a>.
+          </p>
+        </div>
+
+        <p class="mt-11 flex flex-wrap gap-4">
+          <a href="tel:+39335637982" class="inline-flex min-h-[54px] items-center justify-center rounded-2xl bg-accent px-7 py-4 text-[14px] font-bold uppercase tracking-wide text-white shadow-glow hover:bg-accent-hover">
+            Chiama ora 335 637 982
+          </a>
+          <a
+            href="mailto:assistenzacaldaiepiemonte@gmail.com?subject=Elettricista%20provincia%20Torino"
+            class="inline-flex min-h-[54px] items-center justify-center rounded-2xl border border-white/20 bg-white/[0.04] px-7 py-4 text-[14px] font-semibold text-white backdrop-blur-sm hover:border-electric/40"
+          >
+            Email scritta
+          </a>
+        </p>
+      </article>
     </main>
-    <footer class="border-t border-white/10 py-6 text-center text-[11px] text-silver">
-      <a href="../privacy.html">Privacy</a>
+
+    <footer class="relative mt-16 border-t border-white/[0.08] bg-gradient-to-b from-black via-[#060b14] to-[#030712] px-4 pb-12 pt-10 text-center">
+      <div class="gradient-divider mx-auto mb-8 max-w-md opacity-80"></div>
+      <a href="../" class="font-display text-[13px] font-bold uppercase tracking-[0.2em] text-white hover:text-electric">← Boscolo homepage</a>
+      <nav class="mt-5 flex flex-wrap justify-center gap-x-6 gap-y-2 text-[12px]" aria-label="Link sito">
+        <a href="../pronto-intervento/" class="text-slate-500 hover:text-white">Pronto intervento</a>
+        <a href="../impianti-elettrici/" class="text-slate-500 hover:text-white">Impianti</a>
+        <a href="../allarmi-sicurezza/" class="text-slate-500 hover:text-white">Allarmi</a>
+        <a href="../assistenza-caldaie/" class="text-slate-500 hover:text-white">Caldaie</a>
+        <a href="../torino-e-provincia/" class="text-slate-500 hover:text-white">Provincia</a>
+      </nav>
+      <div class="mt-6"><a href="../privacy.html" class="text-[11px] text-slate-600 hover:text-slate-400">Privacy</a></div>
+      <p class="mt-4 text-[10px] uppercase tracking-[0.12em] text-slate-600">elettricistaboscolo.it · Torino</p>
     </footer>
   </body>
 </html>

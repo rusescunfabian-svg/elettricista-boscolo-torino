@@ -11,7 +11,7 @@
     <meta name="author" content="Boscolo Impiantistica Torino" />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta name="googlebot" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
-    <meta name="theme-color" content="#0a0f14" />
+    <meta name="theme-color" content="#030712" />
     <meta name="format-detection" content="telephone=yes,email=yes,address=yes" />
     <link rel="canonical" href="https://www.elettricistaboscolo.it/" />
     <link rel="alternate" hreflang="it-IT" href="https://www.elettricistaboscolo.it/" />
@@ -25,7 +25,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -249,12 +249,15 @@
       }
     </script>
   </head>
-  <body class="touch-manipulation bg-ink pb-28 pr-14 font-sans text-base antialiased text-slate-200 sm:pb-8 md:pr-[4.5rem]">
+  <body class="touch-manipulation relative min-h-screen bg-transparent pb-28 pr-14 font-sans text-base antialiased text-slate-300 sm:pb-8 md:pr-[4.5rem]">
+    <div class="ambient-bg pointer-events-none fixed inset-0 -z-30" aria-hidden="true"></div>
+    <div class="ambient-grid pointer-events-none fixed inset-0 -z-20" aria-hidden="true"></div>
+
     <a href="#contenuto" class="skip-link sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-white focus:px-4 focus:py-3 focus:text-ink focus:outline-none focus:ring-2 focus:ring-accent">Vai al contenuto</a>
 
     <!-- Barra fissa destra Chiama / WhatsApp (mobile-first touch 44px) -->
     <aside
-      class="fixed inset-y-0 right-0 z-[90] flex w-14 flex-col items-center justify-center gap-3 border-l border-white/10 bg-graphite/95 py-6 shadow-[0_0_40px_rgba(0,0,0,.45)] backdrop-blur-sm [-webkit-tap-highlight-color:transparent] sm:w-[4.25rem]"
+      class="fixed inset-y-0 right-0 z-[90] flex w-14 flex-col items-center justify-center gap-3 border-l border-white/15 bg-gradient-to-b from-slate-900/92 via-graphite/95 to-slate-950/92 py-6 shadow-[0_0_60px_rgba(0,0,0,.5)] backdrop-blur-xl [-webkit-tap-highlight-color:transparent] sm:w-[4.25rem]"
       aria-label="Contatti veloci chiama WhatsApp"
     >
       <a
@@ -277,11 +280,11 @@
       </a>
     </aside>
 
-    <header class="sticky top-0 z-50 border-b border-white/10 bg-ink/95 backdrop-blur-md">
+    <header class="sticky top-0 z-50 glass-nav">
       <div class="mx-auto flex max-w-6xl items-center justify-between gap-3 px-3 py-2.5 sm:px-5 sm:py-3">
         <a href="/" class="group flex min-w-0 flex-col leading-tight" aria-label="Boscolo Impiantistica Torino Home">
-          <span class="font-bold text-lg tracking-[0.2em] text-white sm:text-2xl">BOSCOLO</span>
-          <span class="text-[9px] font-semibold uppercase tracking-[0.32em] text-silver sm:text-[10px]">Elettricista · Torino e provincia</span>
+          <span class="font-display text-xl font-extrabold tracking-[0.18em] text-white sm:text-2xl md:text-[1.65rem]">BOSCOLO</span>
+          <span class="text-[9px] font-semibold uppercase tracking-[0.28em] text-electric sm:text-[10px]">Elettricista · Torino e provincia</span>
         </a>
 
         <div class="flex items-center gap-2">
@@ -295,7 +298,7 @@
           <button
             type="button"
             id="menu-btn"
-            class="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg border border-white/15 bg-steel text-white lg:hidden"
+            class="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-xl border border-white/15 bg-slate-900/80 text-white shadow-inner shadow-black/30 backdrop-blur lg:hidden"
             aria-controls="mobile-nav"
             aria-expanded="false"
             aria-label="Apri menu"
@@ -306,17 +309,17 @@
         </div>
       </div>
 
-      <nav class="hidden border-t border-white/10 bg-steel/60 lg:block" aria-label="Principale">
-        <ul class="mx-auto flex max-w-6xl flex-wrap justify-center gap-x-6 gap-y-1 px-5 py-2 text-sm font-medium text-silver">
-          <li><a class="rounded px-1 py-1 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent" href="#attivita">Chi siamo</a></li>
-          <li><a class="rounded px-1 py-1 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent" href="#servizi">Servizi</a></li>
-          <li><a class="rounded px-1 py-1 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent" href="#zonazione">Provincia</a></li>
-          <li><a class="rounded px-1 py-1 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent" href="#faq">FAQ</a></li>
-          <li><a class="rounded px-1 py-1 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent" href="#recensioni">Maps</a></li>
+      <nav class="hidden border-t border-white/5 bg-slate-950/40 lg:block" aria-label="Principale">
+        <ul class="mx-auto flex max-w-6xl flex-wrap justify-center gap-x-7 gap-y-1 px-5 py-2.5 text-[13px] font-semibold uppercase tracking-[0.12em] text-silver">
+          <li><a class="rounded px-1 py-1 transition-colors hover:text-electric focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric/60" href="#attivita">Chi siamo</a></li>
+          <li><a class="rounded px-1 py-1 transition-colors hover:text-electric focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric/60" href="#servizi">Servizi</a></li>
+          <li><a class="rounded px-1 py-1 transition-colors hover:text-electric focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric/60" href="#zonazione">Provincia</a></li>
+          <li><a class="rounded px-1 py-1 transition-colors hover:text-electric focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric/60" href="#faq">FAQ</a></li>
+          <li><a class="rounded px-1 py-1 transition-colors hover:text-electric focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric/60" href="#recensioni">Maps</a></li>
         </ul>
       </nav>
 
-      <div id="mobile-nav" hidden class="max-h-[min(70vh,calc(100vh-52px))] overflow-y-auto border-t border-white/10 bg-ink lg:hidden">
+      <div id="mobile-nav" hidden class="glass-section max-h-[min(70vh,calc(100vh-52px))] overflow-y-auto border-x-0 border-b-0 border-t border-white/[0.08] bg-slate-950/90 lg:hidden">
         <ul class="flex flex-col gap-0 px-3 py-2 text-[15px] font-semibold">
           <li><a class="block min-h-[48px] rounded-lg px-3 py-3.5 hover:bg-white/5" href="#attivita">Chi siamo</a></li>
           <li><a class="block min-h-[48px] rounded-lg px-3 py-3.5 hover:bg-white/5" href="#servizi">Servizi</a></li>
@@ -330,23 +333,36 @@
     </header>
 
     <main id="contenuto">
-      <section class="hero-grid relative isolate overflow-hidden border-b border-white/10" aria-labelledby="hero-title">
-        <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(196,30,36,0.22),transparent)]"></div>
-        <div class="relative mx-auto max-w-6xl px-3 py-12 sm:px-5 sm:py-16 md:py-20 lg:py-24">
-          <div class="max-w-3xl">
-            <p class="mb-3 inline-flex max-w-full flex-wrap items-center rounded-full border border-white/15 bg-white/5 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wide text-silver">
+      <section class="relative isolate overflow-hidden border-b border-white/[0.07]" aria-labelledby="hero-title">
+        <div class="pointer-events-none absolute -left-1/4 -top-[20%] h-[clamp(18rem,45vw,32rem)] w-[clamp(18rem,45vw,32rem)] rounded-full bg-accent/22 blur-[100px]" aria-hidden="true"></div>
+        <div class="pointer-events-none absolute -right-[18%] top-[5%] h-[clamp(14rem,38vw,26rem)] w-[clamp(14rem,38vw,26rem)] animate-aurora rounded-full bg-electric/15 blur-[90px]" aria-hidden="true"></div>
+        <div class="pointer-events-none absolute bottom-[-25%] left-[15%] h-[clamp(14rem,40vw,24rem)] w-[clamp(14rem,40vw,28rem)] rounded-full bg-accent/12 blur-[100px]" aria-hidden="true"></div>
+        <div class="pointer-events-none absolute inset-0 opacity-[0.06] [&>svg]:h-full [&>svg]:w-full" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 800 450" fill="none" stroke="rgba(148,163,184,0.65)" stroke-width="0.35">
+            <defs>
+              <pattern id="hlines" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M0 39H800" opacity="0.5" stroke-width="0.25" stroke="rgba(34,211,238,0.25)" />
+                <path d="M0 0v40 M39 0v40" stroke-width="0.2" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#hlines)" />
+          </svg>
+        </div>
+        <div class="relative mx-auto max-w-6xl px-3 py-14 sm:px-5 sm:py-20 lg:grid lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-14 lg:py-24 xl:gap-16">
+          <div>
+            <p class="mb-4 inline-flex max-w-full flex-wrap items-center rounded-full border border-white/15 bg-white/[0.06] px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.14em] text-aurora shadow-[inset_0_1px_0_rgba(255,255,255,0.12)] backdrop-blur">
               Boscolo · più di trent&apos;anni · case, condomini, attività
             </p>
-            <h1 id="hero-title" class="text-balance text-[1.65rem] font-bold leading-snug text-white sm:text-3xl md:text-4xl">
+            <h1 id="hero-title" class="section-heading text-balance text-[1.7rem] font-bold leading-[1.12] text-white sm:text-[2.1rem] md:text-[2.45rem] lg:text-[2.65rem]">
               Chiama l&apos;elettricista quando saltano i salvavita, deve rifarsi il quadro o servono nuovi impianti
             </h1>
-            <p id="hero-intro" class="mt-4 max-w-2xl text-pretty text-base leading-relaxed text-silver sm:text-lg">
+            <p id="hero-intro" class="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-slate-300 sm:text-[1.0625rem] lg:text-[1.0875rem]">
               Siamo un&apos;<strong class="font-semibold text-white">impresa elettrica Boscolo</strong> che lavora ogni giorno su <strong class="font-semibold text-white">case, condomini e piccole attività</strong> a Torino e in provincia: interventi urgenti sul quadro, nuove derivazioni, ristrutturazioni, automazioni (tapparelle e cancelli), impianti di sicurezza e i <strong class="font-semibold text-white">collegamenti elettrici</strong> legati alle caldaie quando il guasto riguarda quella parte. Ci contattate al <strong class="font-semibold text-white">335 637 982</strong>, su WhatsApp o via email: spiegate il problema e concordiamo il passo successivo (spesso un sopralluogo).
             </p>
-            <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <div class="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
                 href="tel:+39335637982"
-                class="inline-flex min-h-[52px] min-w-[52px] flex-1 items-center justify-center rounded-xl bg-accent px-6 py-3 text-center text-[15px] font-bold uppercase tracking-wide text-white shadow-glow transition hover:bg-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+                class="inline-flex min-h-[52px] min-w-[52px] flex-1 items-center justify-center rounded-2xl bg-accent px-6 py-3.5 text-center text-[14px] font-bold uppercase tracking-[0.12em] text-white shadow-glow transition hover:bg-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
               >
                 Chiama 335&nbsp;637&nbsp;982
               </a>
@@ -354,111 +370,170 @@
                 href="https://wa.me/39335637982?text=Richiesta%20impiantista%20Boscolo%20Torino"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex min-h-[52px] flex-1 items-center justify-center rounded-xl border border-emerald-400/55 bg-emerald-950/50 px-6 py-3 text-center text-[15px] font-bold text-emerald-50 transition hover:bg-emerald-900/55 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
+                class="inline-flex min-h-[52px] flex-1 items-center justify-center rounded-2xl border border-emerald-400/55 bg-emerald-950/50 px-6 py-3.5 text-center text-[14px] font-bold text-emerald-50 shadow-lg shadow-black/35 transition hover:border-emerald-300/65 hover:bg-emerald-900/55 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400"
               >
                 WhatsApp ora
               </a>
               <a
                 href="mailto:assistenzacaldaiepiemonte@gmail.com?subject=Preventivo%20impiantista%20Torino"
-                class="inline-flex min-h-[52px] flex-1 items-center justify-center rounded-xl border border-white/25 px-6 py-3 text-center text-[15px] font-semibold text-white hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                class="inline-flex min-h-[52px] flex-1 items-center justify-center rounded-2xl border border-white/20 bg-white/[0.04] px-6 py-3.5 text-center text-[14px] font-semibold text-white backdrop-blur-sm transition hover:border-electric/40 hover:bg-white/[0.08] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric/50"
               >
                 Email preventivo
               </a>
             </div>
-            <dl class="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 md:flex md:flex-wrap">
-              <div class="rounded-xl border border-white/10 bg-steel/85 p-3.5 backdrop-blur sm:max-w-[12.5rem]">
-                <dt class="text-[10px] font-bold uppercase tracking-wider text-accent">Emergenza</dt>
-                <dd class="mt-1 text-sm font-semibold text-white">Stessa linea per guasti seri anche di sera o nei festivi, quando è il caso</dd>
+            <dl class="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 md:flex md:flex-wrap">
+              <div class="glass-section card-spotlift rounded-2xl p-4 sm:max-w-[13.5rem]">
+                <dt class="text-[10px] font-bold uppercase tracking-[0.16em] text-electric">Emergenza</dt>
+                <dd class="mt-1.5 text-sm font-semibold leading-snug text-white">Stessa linea per guasti seri anche di sera o nei festivi, quando è il caso</dd>
               </div>
-              <div class="rounded-xl border border-white/10 bg-steel/85 p-3.5 backdrop-blur sm:max-w-[14rem]">
-                <dt class="text-[10px] font-bold uppercase tracking-wider text-accent">Chiarezza</dt>
-                <dd class="mt-1 text-sm font-semibold text-white">Lavoro ordinato sul quadro e spiegazioni comprensibili prima di intervenire dove serve il sopralluogo</dd>
+              <div class="glass-section card-spotlift rounded-2xl p-4 sm:max-w-[14.75rem]">
+                <dt class="text-[10px] font-bold uppercase tracking-[0.16em] text-accent">Chiarezza</dt>
+                <dd class="mt-1.5 text-sm font-semibold leading-snug text-white">Lavoro ordinato sul quadro e spiegazioni comprensibili prima di intervenire dove serve il sopralluogo</dd>
               </div>
             </dl>
+          </div>
+          <div class="relative mt-14 lg:mt-0">
+            <div class="absolute -inset-3 rounded-[1.85rem] bg-gradient-to-br from-electric/25 via-accent/25 to-accent/15 opacity-85 blur-xl" aria-hidden="true"></div>
+            <figure class="glass-section relative overflow-hidden rounded-[1.6rem] p-3 shadow-glow-lg">
+              <img
+                src="./assets/images/og-boscolo-share.png"
+                alt="Anteprima visiva marchio Boscolo elettricista Torino e provincia"
+                width="1200"
+                height="630"
+                class="aspect-[1200/630] h-auto w-full rounded-xl border border-white/10 object-cover"
+                decoding="async"
+                fetchpriority="high"
+              />
+              <figcaption class="mt-3 flex flex-wrap items-center justify-between gap-2 px-2 text-[11px] font-medium uppercase tracking-wider text-slate-400">
+                <span class="flex items-center gap-2"><span class="h-2 w-2 animate-pulse rounded-full bg-accent" aria-hidden="true"></span> Linea tecnica attiva · Torino</span>
+                <a href="./torino-e-provincia/" class="text-electric underline-offset-2 hover:underline">Provincia intera →</a>
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
 
-      <section id="attivita" class="border-b border-white/10 bg-steel py-12 sm:py-16" aria-labelledby="attivita-title">
+      <section id="attivita" class="relative py-16 sm:py-20 md:py-24" aria-labelledby="attivita-title">
         <div class="mx-auto max-w-6xl px-3 sm:px-5">
-          <h2 id="attivita-title" class="text-2xl font-bold text-white sm:text-3xl">Chi siamo e come lavoriamo</h2>
-          <p class="mt-4 max-w-3xl text-base leading-relaxed text-silver sm:text-[17px]">
-            <strong class="font-semibold text-white">Boscolo Impiantistica Torino</strong> è l&apos;attività che trovate sulla <a href="https://maps.app.goo.gl/X644esZ8eEndJV3V8" target="_blank" rel="noopener noreferrer" class="font-semibold text-accent underline-offset-4 hover:underline">scheda pubblica Google Maps</a>. Operiamo nei <strong class="font-semibold text-white">lavori elettrici</strong>: dal ripristino in emergenza quando salta il differenziale o una linea alla <a href="./impianti-elettrici/" class="font-semibold text-accent underline-offset-4 hover:underline">sistemazione e ampliamento del quadro elettrico</a>, alle prese comandate e motorizzazioni domestici, predisposizioni per <a href="./allarmi-sicurezza/" class="font-semibold text-accent underline-offset-4 hover:underline">allarme e videocamere</a>, fino alla parte elettronica degli impianti termici quando tocca al nostro mestiere (vedere <a href="./assistenza-caldaie/" class="font-semibold text-accent underline-offset-4 hover:underline">caldaie e collegamenti</a>).
+          <div class="gradient-divider mb-12 max-w-xl opacity-75"></div>
+          <div class="glass-section rounded-[1.75rem] p-8 sm:p-11">
+            <h2 id="attivita-title" class="section-heading text-3xl font-bold text-white md:text-[2.1rem]">Chi siamo e come lavoriamo</h2>
+          <p class="mt-6 max-w-3xl text-base leading-relaxed text-slate-300 sm:text-[17px] md:text-[17.5px]">
+            <strong class="font-semibold text-white">Boscolo Impiantistica Torino</strong> è l&apos;attività che trovate sulla <a href="https://maps.app.goo.gl/X644esZ8eEndJV3V8" target="_blank" rel="noopener noreferrer" class="font-semibold text-electric underline-offset-4 hover:underline">scheda pubblica Google Maps</a>. Operiamo nei <strong class="font-semibold text-white">lavori elettrici</strong>: dal ripristino in emergenza quando salta il differenziale o una linea alla <a href="./impianti-elettrici/" class="font-semibold text-electric underline-offset-4 hover:underline">sistemazione e ampliamento del quadro elettrico</a>, alle prese comandate e motorizzazioni domestici, predisposizioni per <a href="./allarmi-sicurezza/" class="font-semibold text-electric underline-offset-4 hover:underline">allarme e videocamere</a>, fino alla parte elettronica degli impianti termici quando tocca al nostro mestiere (vedere <a href="./assistenza-caldaie/" class="font-semibold text-electric underline-offset-4 hover:underline">caldaie e collegamenti</a>).
           </p>
-          <p class="mt-4 max-w-3xl text-base leading-relaxed text-silver sm:text-[17px]">
+          <p class="mt-5 max-w-3xl text-base leading-relaxed text-slate-300 sm:text-[17px] md:text-[17.5px]">
             Il contatto principale è il <strong class="font-semibold text-white">telefono 335 637 982</strong> (anche di notte per i guasti gravi), oppure <strong class="font-semibold text-white">WhatsApp</strong> e l&apos;email <strong class="font-semibold text-white">assistenzacaldaiepiemonte@gmail.com</strong> per richieste scritte o preventivi. Da oltre <strong class="font-semibold text-white">trent&apos;anni</strong> siamo presenti sul territorio piemontese: preferiamo capire il quadro reale dell&apos;impianto (quando serve con <strong class="font-semibold text-white">foto e sopralluogo</strong>) invece di promettere tempi fissi al telefono che poi non reggono con il traffico e la coda lavori.
           </p>
-          <p class="mt-4 max-w-3xl text-base leading-relaxed text-silver sm:text-[17px]">
+          <p class="mt-6 max-w-3xl text-base leading-relaxed text-slate-300 sm:text-[17px] md:text-[17.5px]">
             <strong class="font-semibold text-white">Cosa non facciamo:</strong> non siamo un centralino che gira la chiamata a tecnici a caso. <strong class="font-semibold text-white">Cosa ci aspettiamo da voi:</strong> una descrizione onesta del guasto o del lavoro e, se possibile, accesso al locale per verificare protezioni e cavi. In fattura e in cantiere teniamo un <strong class="font-semibold text-white">ordine visibile</strong> sul quadro: così il prossimo tecnico (anche tra anni) capisce cosa è stato fatto.
           </p>
+          </div>
         </div>
       </section>
 
-      <section id="servizi" class="border-b border-white/10 bg-ink py-12 sm:py-16" aria-labelledby="servizi-title">
+      <section id="servizi" class="relative py-16 sm:py-20 md:py-24" aria-labelledby="servizi-title">
         <div class="mx-auto max-w-6xl px-3 sm:px-5">
-          <h2 id="servizi-title" class="text-2xl font-bold text-white sm:text-3xl">Cosa facciamo per voi a Torino e in provincia</h2>
-          <p class="mt-3 max-w-2xl text-sm text-silver sm:text-base">
+          <h2 id="servizi-title" class="section-heading text-3xl font-bold text-white md:text-[2.1rem]">Cosa facciamo per voi a Torino e in provincia</h2>
+          <p class="mt-4 max-w-3xl text-sm leading-relaxed text-slate-300 sm:text-[1.0625rem]">
             Sotto trovate i <strong class="font-semibold text-white">quattro ambiti</strong> in cui interveniamo più spesso. Ogni voce apre una pagina con maggiori dettagli sul tipo di lavoro.
           </p>
-          <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" role="list">
-            <li id="pronto-intervento" class="flex flex-col rounded-2xl border border-white/10 bg-graphite p-5 shadow-card">
-              <h3 class="text-base font-bold text-white">Pronto intervento</h3>
-              <p class="mt-2 grow text-[13px] leading-relaxed text-silver">
+          <ul class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4" role="list">
+            <li id="pronto-intervento" class="relative flex flex-col overflow-hidden rounded-2xl border border-white/[0.1] bg-gradient-to-b from-white/[0.08] via-white/[0.03] to-transparent p-6 shadow-xl backdrop-blur-md card-spotlift">
+              <div class="pointer-events-none absolute right-4 top-3 h-20 w-20 rounded-full bg-accent/25 blur-2xl" aria-hidden="true"></div>
+              <span class="relative mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-accent/40 bg-accent/15 text-accent">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/></svg>
+              </span>
+              <h3 class="font-display text-lg font-bold text-white">Pronto intervento</h3>
+              <p class="relative mt-2 grow text-[13px] leading-relaxed text-slate-300">
                 Cortocircuito, blackout in una parte di casa, differenziali che non reggono, puzza dal quadro: prima sicurezza, poi sistemiamo sul serio.
               </p>
-              <a href="./pronto-intervento/" class="mt-4 text-sm font-bold text-accent underline-offset-4 hover:underline">Pagina pronto intervento →</a>
+              <a href="./pronto-intervento/" class="relative mt-5 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.08em] text-electric underline-offset-[3px] transition hover:text-white hover:underline">Pagina pronto intervento <span aria-hidden="true">→</span></a>
             </li>
-            <li id="quadro-impianti" class="flex flex-col rounded-2xl border border-white/10 bg-graphite p-5 shadow-card">
-              <h3 class="text-base font-bold text-white">Impianti e quadri</h3>
-              <p class="mt-2 grow text-[13px] leading-relaxed text-silver">
+            <li id="quadro-impianti" class="relative flex flex-col overflow-hidden rounded-2xl border border-white/[0.1] bg-gradient-to-b from-white/[0.08] via-white/[0.03] to-transparent p-6 shadow-xl backdrop-blur-md card-spotlift">
+              <div class="pointer-events-none absolute right-4 top-3 h-20 w-20 rounded-full bg-electric/25 blur-2xl" aria-hidden="true"></div>
+              <span class="relative mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-electric/40 bg-electric/10 text-electric">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+              </span>
+              <h3 class="font-display text-lg font-bold text-white">Impianti e quadri</h3>
+              <p class="relative mt-2 grow text-[13px] leading-relaxed text-slate-300">
                 Ristrutturazioni, nuove derivazioni (cucina, bagno, condizionatori), quadro rinnovato con cavi marcati e protezioni a posto.
               </p>
-              <a href="./impianti-elettrici/" class="mt-4 text-sm font-bold text-accent underline-offset-4 hover:underline">Impianti elettrici Torino →</a>
+              <a href="./impianti-elettrici/" class="relative mt-5 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.08em] text-electric underline-offset-[3px] transition hover:text-white hover:underline">Impianti elettrici Torino <span aria-hidden="true">→</span></a>
             </li>
-            <li id="sicurezza" class="flex flex-col rounded-2xl border border-white/10 bg-graphite p-5 shadow-card">
-              <h3 class="text-base font-bold text-white">Allarmi e telecamere</h3>
-              <p class="mt-2 grow text-[13px] leading-relaxed text-silver">
+            <li id="sicurezza" class="relative flex flex-col overflow-hidden rounded-2xl border border-white/[0.1] bg-gradient-to-b from-white/[0.08] via-white/[0.03] to-transparent p-6 shadow-xl backdrop-blur-md card-spotlift">
+              <span class="relative mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/25 bg-white/[0.06] text-white">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              </span>
+              <h3 class="font-display text-lg font-bold text-white">Allarmi e telecamere</h3>
+              <p class="relative mt-2 grow text-[13px] leading-relaxed text-slate-300">
                 Alimentazioni nuove lungo i muri, arrivo dei cavi al quadro dove servono antifurto e video.
               </p>
-              <a href="./allarmi-sicurezza/" class="mt-4 text-sm font-bold text-accent underline-offset-4 hover:underline">Sicurezza e CCTV →</a>
+              <a href="./allarmi-sicurezza/" class="relative mt-5 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.08em] text-electric underline-offset-[3px] transition hover:text-white hover:underline">Sicurezza e CCTV <span aria-hidden="true">→</span></a>
             </li>
-            <li id="caldaie" class="flex flex-col rounded-2xl border border-white/10 bg-graphite p-5 shadow-card">
-              <h3 class="text-base font-bold text-white">Parte elettrica sulla caldaia</h3>
-              <p class="mt-2 grow text-[13px] leading-relaxed text-silver">
+            <li id="caldaie" class="relative flex flex-col overflow-hidden rounded-2xl border border-white/[0.1] bg-gradient-to-b from-white/[0.08] via-white/[0.03] to-transparent p-6 shadow-xl backdrop-blur-md card-spotlift">
+              <span class="relative mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-amber-400/35 bg-amber-500/10 text-amber-200">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0z"/></svg>
+              </span>
+              <h3 class="font-display text-lg font-bold text-white">Parte elettrica sulla caldaia</h3>
+              <p class="relative mt-2 grow text-[13px] leading-relaxed text-slate-300">
                 Codici sulla scheda, linea senza tensione giusta, comandi esterni: ci occupiamo di ciò che riguarda cavi e alimentazioni, poi si integra con il termico se serve.
               </p>
-              <a href="./assistenza-caldaie/" class="mt-4 text-sm font-bold text-accent underline-offset-4 hover:underline">Assistenza caldaie →</a>
+              <a href="./assistenza-caldaie/" class="relative mt-5 inline-flex items-center gap-2 text-[13px] font-bold uppercase tracking-[0.08em] text-electric underline-offset-[3px] transition hover:text-white hover:underline">Assistenza caldaie <span aria-hidden="true">→</span></a>
             </li>
           </ul>
-          <div class="mt-8 rounded-2xl border border-white/10 bg-steel/40 p-4 sm:p-6">
-            <h3 class="text-sm font-bold uppercase tracking-wider text-accent">Altre richieste che ci arrivano spesso</h3>
-            <p class="mt-2 text-[13px] leading-relaxed text-silver sm:text-sm">
-              Messa a terra, ricerca dispersioni, guasti che fanno scattare spesso il salvavita, citofono o videocitofono, sostituzione differenziali: <strong class="font-semibold text-white">decidiamo insieme al telefono se serve un sopralluogo</strong> e se rientra in quello che possiamo fare in sicurezza e con le norme applicabili al vostro edificio. <a href="tel:+39335637982" class="font-semibold text-white underline underline-offset-2">335 637 982</a>
+          <div class="mt-10 rounded-3xl border border-electric/20 bg-gradient-to-br from-electric/[0.08] via-white/[0.04] to-accent/[0.06] p-6 shadow-glow-lg sm:p-8">
+            <h3 class="font-display text-sm font-bold uppercase tracking-[0.16em] text-electric">Altre richieste che ci arrivano spesso</h3>
+            <p class="mt-4 text-[13px] leading-relaxed text-slate-300 sm:text-sm">
+              Messa a terra, ricerca dispersioni, guasti che fanno scattare spesso il salvavita, citofono o videocitofono, sostituzione differenziali: <strong class="font-semibold text-white">decidiamo insieme al telefono se serve un sopralluogo</strong> e se rientra in quello che possiamo fare in sicurezza e con le norme applicabili al vostro edificio. <a href="tel:+39335637982" class="font-semibold text-white underline decoration-electric underline-offset-[3px] transition hover:text-electric">335 637 982</a>
             </p>
           </div>
         </div>
       </section>
 
-      <section id="zonazione" class="border-b border-white/10 bg-steel py-12 sm:py-16">
+      <section id="zonazione" class="relative py-16 sm:py-20 md:py-24">
         <div class="mx-auto max-w-6xl px-3 sm:px-5">
-          <h2 class="text-2xl font-bold text-white sm:text-3xl">Città e provincia: dove interveniamo</h2>
-          <p class="mt-4 max-w-4xl text-base leading-relaxed text-silver sm:text-[17px]">
-            Sul <strong class="font-semibold text-white">comune di Torino</strong> arriviamo ogni giorno: case in ristrutturazione, condomìni quando salta una linea, piccole officine sulla trifase. <strong class="font-semibold text-white">I tempi li diciamo in base a traffico e urgenze già in coda</strong>, non con minuti fissi da pubblicità.
-          </p>
-          <p class="mt-4 max-w-4xl text-base leading-relaxed text-silver sm:text-[17px]">
-            <strong class="font-semibold text-white">Sulla Provincia di Torino</strong> (comuni fuori dall&apos;urbano di Torino capitale) concordiamo la visita al telefono: dipendono distanza e interventi già programmati in città nella stessa giornata. Per capire come copriamo <strong class="font-semibold text-white">tutta la provincia</strong> senza ridurci a un solo paese, leggete la pagina
-            <a href="./torino-e-provincia/" class="font-semibold text-accent underline-offset-4 hover:underline">Torino e provincia · Boscolo</a>.
-          </p>
+          <div class="mx-auto grid max-w-6xl gap-8 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
+            <div>
+              <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-electric">Zona · tempi · logistica</p>
+              <h2 class="section-heading mt-3 text-3xl font-bold text-white md:text-[2.05rem]">Città e provincia: dove interveniamo</h2>
+              <p class="mt-6 max-w-4xl text-base leading-relaxed text-slate-300 sm:text-[17px] md:text-[17.5px]">
+                Sul <strong class="font-semibold text-white">comune di Torino</strong> arriviamo ogni giorno: case in ristrutturazione, condomìni quando salta una linea, piccole officine sulla trifase. <strong class="font-semibold text-white">I tempi li diciamo in base a traffico e urgenze già in coda</strong>, non con minuti fissi da pubblicità.
+              </p>
+              <p class="mt-5 max-w-4xl text-base leading-relaxed text-slate-300 sm:text-[17px] md:text-[17.5px]">
+                <strong class="font-semibold text-white">Sulla Provincia di Torino</strong> (comuni fuori dall&apos;urbano di Torino capitale) concordiamo la visita al telefono: dipendono distanza e interventi già programmati in città nella stessa giornata. Per capire come copriamo <strong class="font-semibold text-white">tutta la provincia</strong> senza ridurci a un solo paese, leggete la pagina
+                <a href="./torino-e-provincia/" class="font-semibold text-electric underline-offset-4 hover:underline">Torino e provincia · Boscolo</a>.
+              </p>
+            </div>
+            <aside class="glass-section relative overflow-hidden rounded-[1.6rem] p-8">
+              <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(34,211,238,0.12),transparent_55%)]" aria-hidden="true"></div>
+              <dl class="relative space-y-5 text-[13px]">
+                <div class="rounded-2xl border border-white/[0.08] bg-black/35 p-4">
+                  <dt class="font-bold uppercase tracking-[0.1em] text-white">Urbano capitale</dt>
+                  <dd class="mt-1.5 text-slate-300">Ingressi tecnici, condominio, officina: primo contatto sempre al numero indicato sulla barra.</dd>
+                </div>
+                <div class="rounded-2xl border border-accent/25 bg-accent/10 p-4">
+                  <dt class="font-bold uppercase tracking-[0.1em] text-accent">Provinciale</dt>
+                  <dd class="mt-1.5 text-slate-300">Combinazione date e fascia ogni giorno: niente liste fisse di nomi nella copy, perché servite davvero i comuni interi TO.</dd>
+                </div>
+              </dl>
+            </aside>
+          </div>
         </div>
       </section>
 
-      <section id="gallery" class="border-b border-white/10 bg-ink py-12 sm:py-16">
+      <section id="gallery" class="relative py-16 sm:py-20 md:py-24">
+        <div class="absolute inset-x-0 top-0 h-px max-w-md bg-gradient-to-r from-transparent via-electric to-transparent opacity-80"></div>
         <div class="mx-auto max-w-6xl px-3 sm:px-5">
-          <h2 class="text-2xl font-bold text-white sm:text-3xl">Foto operative post intervento</h2>
-          <p class="mt-3 text-sm text-silver">Immagini di esempio (senza persone), create per ispirarvi al tipo di lavoro: quando avete le foto dai cantieri Boscolo si sostituiscono i file.</p>
-          <ul class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3" role="list">
+          <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500">Portfolio visivo · esempi</p>
+              <h2 class="section-heading mt-3 text-3xl font-bold text-white md:text-[2.05rem]">Foto operative post intervento</h2>
+            </div>
+            <p class="max-w-xl text-[13px] leading-relaxed text-slate-400 md:text-sm">Immagini di esempio (senza persone), create per ispirarvi al tipo di lavoro: quando avete le foto dai cantieri Boscolo si sostituiscono i file.</p>
+          </div>
+          <ul class="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3" role="list">
             <li>
-              <figure class="overflow-hidden rounded-xl border border-white/10 bg-graphite">
+              <figure class="group/card overflow-hidden rounded-3xl border border-white/[0.1] bg-gradient-to-b from-white/[0.05] to-transparent shadow-xl transition duration-300 hover:border-electric/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.09)]">
                 <img
                   src="./assets/images/cat-pronto-emergenza.png"
                   alt="Emergenza elettrica su quadro, differenziale in allarme — esempio visivo Boscolo"
@@ -466,13 +541,13 @@
                   height="1067"
                   loading="lazy"
                   decoding="async"
-                  class="aspect-[4/3] w-full object-cover"
+                  class="aspect-[4/3] w-full object-cover transition duration-500 group-hover/card:scale-[1.03]"
                 />
-                <figcaption class="border-t border-white/10 px-3 py-2 text-[12px] text-silver">Pronto intervento sul quadro</figcaption>
+                <figcaption class="border-t border-white/[0.08] px-4 py-3 text-[11px] font-semibold uppercase tracking-wide text-slate-400">Pronto intervento sul quadro</figcaption>
               </figure>
             </li>
             <li>
-              <figure class="overflow-hidden rounded-xl border border-white/10 bg-graphite">
+              <figure class="group/card overflow-hidden rounded-3xl border border-white/[0.1] bg-gradient-to-b from-white/[0.05] to-transparent shadow-xl transition duration-300 hover:border-electric/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.09)]">
                 <img
                   src="./assets/images/cat-quadri-ordinati.png"
                   alt="Quadro elettrico ordinato dopo lavoro — illustrazione fotografica"
@@ -480,13 +555,13 @@
                   height="1067"
                   loading="lazy"
                   decoding="async"
-                  class="aspect-[4/3] w-full object-cover"
+                  class="aspect-[4/3] w-full object-cover transition duration-500 group-hover/card:scale-[1.03]"
                 />
-                <figcaption class="border-t border-white/10 px-3 py-2 text-[12px] text-silver">Impianto e quadro</figcaption>
+                <figcaption class="border-t border-white/[0.08] px-4 py-3 text-[11px] font-semibold uppercase tracking-wide text-slate-400">Impianto e quadro</figcaption>
               </figure>
             </li>
             <li>
-              <figure class="overflow-hidden rounded-xl border border-white/10 bg-graphite">
+              <figure class="group/card overflow-hidden rounded-3xl border border-white/[0.1] bg-gradient-to-b from-white/[0.05] to-transparent shadow-xl transition duration-300 hover:border-electric/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.09)]">
                 <img
                   src="./assets/images/cat-automazioni-cavidotti.png"
                   alt="Cavidotti e automazioni domestiche cablaggio ordinato — esempio"
@@ -494,13 +569,13 @@
                   height="1067"
                   loading="lazy"
                   decoding="async"
-                  class="aspect-[4/3] w-full object-cover"
+                  class="aspect-[4/3] w-full object-cover transition duration-500 group-hover/card:scale-[1.03]"
                 />
-                <figcaption class="border-t border-white/10 px-3 py-2 text-[12px] text-silver">Automazioni e cavi</figcaption>
+                <figcaption class="border-t border-white/[0.08] px-4 py-3 text-[11px] font-semibold uppercase tracking-wide text-slate-400">Automazioni e cavi</figcaption>
               </figure>
             </li>
             <li>
-              <figure class="overflow-hidden rounded-xl border border-white/10 bg-graphite">
+              <figure class="group/card overflow-hidden rounded-3xl border border-white/[0.1] bg-gradient-to-b from-white/[0.05] to-transparent shadow-xl transition duration-300 hover:border-electric/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.09)]">
                 <img
                   src="./assets/images/cat-sicurezza-cctv.png"
                   alt="Telecamera e cablaggio sicurezza — esempio senza volti"
@@ -508,13 +583,13 @@
                   height="1067"
                   loading="lazy"
                   decoding="async"
-                  class="aspect-[4/3] w-full object-cover"
+                  class="aspect-[4/3] w-full object-cover transition duration-500 group-hover/card:scale-[1.03]"
                 />
-                <figcaption class="border-t border-white/10 px-3 py-2 text-[12px] text-silver">Allarmi e video</figcaption>
+                <figcaption class="border-t border-white/[0.08] px-4 py-3 text-[11px] font-semibold uppercase tracking-wide text-slate-400">Allarmi e video</figcaption>
               </figure>
             </li>
             <li>
-              <figure class="overflow-hidden rounded-xl border border-white/10 bg-graphite">
+              <figure class="group/card overflow-hidden rounded-3xl border border-white/[0.1] bg-gradient-to-b from-white/[0.05] to-transparent shadow-xl transition duration-300 hover:border-electric/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.09)]">
                 <img
                   src="./assets/images/cat-caldaia-elettrico.png"
                   alt="Parte elettrica vicino caldaia morsettiera — esempio tecnico"
@@ -522,13 +597,13 @@
                   height="1067"
                   loading="lazy"
                   decoding="async"
-                  class="aspect-[4/3] w-full object-cover"
+                  class="aspect-[4/3] w-full object-cover transition duration-500 group-hover/card:scale-[1.03]"
                 />
-                <figcaption class="border-t border-white/10 px-3 py-2 text-[12px] text-silver">Caldaia lato elettrico</figcaption>
+                <figcaption class="border-t border-white/[0.08] px-4 py-3 text-[11px] font-semibold uppercase tracking-wide text-slate-400">Caldaia lato elettrico</figcaption>
               </figure>
             </li>
             <li>
-              <figure class="overflow-hidden rounded-xl border border-white/10 bg-graphite">
+              <figure class="group/card overflow-hidden rounded-3xl border border-white/[0.1] bg-gradient-to-b from-white/[0.05] to-transparent shadow-xl transition duration-300 hover:border-electric/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.09)]">
                 <img
                   src="./assets/images/cat-tutta-provincia.png"
                   alt="Paesaggio Piemonte — copertura Torino e provincia Boscolo"
@@ -536,100 +611,105 @@
                   height="1067"
                   loading="lazy"
                   decoding="async"
-                  class="aspect-[4/3] w-full object-cover"
+                  class="aspect-[4/3] w-full object-cover transition duration-500 group-hover/card:scale-[1.03]"
                 />
-                <figcaption class="border-t border-white/10 px-3 py-2 text-[12px] text-silver">Copertura provincia</figcaption>
+                <figcaption class="border-t border-white/[0.08] px-4 py-3 text-[11px] font-semibold uppercase tracking-wide text-slate-400">Copertura provincia</figcaption>
               </figure>
             </li>
           </ul>
         </div>
       </section>
 
-      <section id="recensioni" class="border-b border-white/10 bg-steel py-12 sm:py-16">
-        <div class="mx-auto grid max-w-6xl gap-8 px-3 sm:px-5 lg:grid-cols-2 lg:items-start">
-          <div>
-            <h2 class="text-2xl font-bold text-white sm:text-3xl">Boscolo su Google Maps</h2>
-            <p class="mt-4 text-base leading-relaxed text-silver">
+      <section id="recensioni" class="relative py-16 sm:py-20 md:py-24">
+        <div class="pointer-events-none absolute inset-x-0 top-px h-[1px] max-w-none bg-gradient-to-r from-accent/70 via-transparent to-electric/50 opacity-75" aria-hidden="true"></div>
+        <div class="mx-auto grid max-w-6xl gap-10 px-3 sm:px-5 lg:grid-cols-2 lg:items-start lg:gap-14">
+          <div class="lg:sticky lg:top-28">
+            <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-electric">Recensioni e posizione</p>
+            <h2 class="section-heading mt-3 text-3xl font-bold text-white md:text-[2.05rem]">Boscolo su Google Maps</h2>
+            <p class="mt-5 text-base leading-relaxed text-slate-300 md:text-[1.0625rem]">
               Qui sotto c&apos;è la vista della sede sulla <strong class="font-semibold text-white">scheda pubblica Maps</strong> di Boscolo — comoda per vedere sulla carta dov&apos;è indicato l&apos;ingresso e, se sono presenti, le recensioni. Per urgente resta il telefono <strong class="font-semibold text-white">335 637 982</strong>.
             </p>
-            <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <a
                 href="https://maps.app.goo.gl/X644esZ8eEndJV3V8"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex min-h-[44px] items-center justify-center rounded-lg bg-white px-5 py-3 text-sm font-bold text-ink hover:bg-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                class="inline-flex min-h-[52px] items-center justify-center rounded-2xl bg-white px-7 py-4 text-[14px] font-bold uppercase tracking-wide text-slate-900 shadow-xl transition hover:bg-electric hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-electric"
               >
                 Apri Google Maps · Boscolo
               </a>
             </div>
           </div>
-          <div id="mappa" class="rounded-2xl border border-white/10 bg-graphite p-1.5">
+          <div id="mappa" class="glass-section relative overflow-hidden rounded-[1.6rem] p-2 shadow-glow-lg md:p-2.5">
             <iframe
               title="Mappa Google — sede BOSCOLO su Maps"
-              class="h-[280px] w-full rounded-xl border-0 sm:h-[320px]"
+              class="aspect-[14/11] max-h-none min-h-[280px] w-full rounded-xl border border-white/[0.08] sm:min-h-[320px]"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               src="https://maps.google.com/maps?q=45.0636127%2C7.6496216&amp;hl=it&amp;z=15&amp;output=embed"
             ></iframe>
-            <p class="mt-2 px-1 text-center text-[11px] text-silver">
+            <p class="mt-3 px-3 text-center text-[11px] text-slate-400">
               Vista dalla scheda pubblica —
-              <a href="https://maps.app.goo.gl/X644esZ8eEndJV3V8" target="_blank" rel="noopener noreferrer" class="text-accent underline underline-offset-2">aprite Maps per gli aggiornamenti</a>.
+              <a href="https://maps.app.goo.gl/X644esZ8eEndJV3V8" target="_blank" rel="noopener noreferrer" class="text-electric underline-offset-2 hover:underline">aprite Maps per gli aggiornamenti</a>.
             </p>
           </div>
         </div>
       </section>
 
       <!-- FAQ accordion 6 domande = JSON-LD -->
-      <section id="faq" class="border-b border-white/10 bg-ink py-12 sm:py-16" aria-labelledby="faq-title">
+      <section id="faq" class="relative py-16 sm:py-20 md:py-24" aria-labelledby="faq-title">
         <div class="mx-auto max-w-2xl px-3 sm:px-5">
-          <h2 id="faq-title" class="text-xl font-bold text-white sm:text-2xl">Domande frequenti</h2>
-          <p class="mt-2 text-[13px] text-silver">Cosa ci chiedono di solito quando qualcuno chiama dalla zona di Torino.</p>
-          <div class="mt-6 space-y-2">
-            <details class="group rounded-xl border border-white/10 bg-graphite/90 open:border-accent/40">
-              <summary class="cursor-pointer list-none px-3 py-2.5 text-[13px] font-semibold text-white [&::-webkit-details-marker]:hidden">
+          <div class="text-center lg:text-start">
+            <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-slate-500">Domande prima di chiamare</p>
+            <h2 id="faq-title" class="section-heading mt-3 text-3xl font-bold text-white md:text-[2rem]">Domande frequenti</h2>
+            <p class="mt-3 text-[14px] text-slate-400">Cosa ci chiedono di solito quando qualcuno chiama dalla zona di Torino.</p>
+          </div>
+          <div class="mt-9 space-y-3">
+            <details class="glass-faq group overflow-hidden rounded-2xl border border-white/[0.1] bg-gradient-to-br from-white/[0.055] to-white/[0.02] backdrop-blur-md transition open:border-accent/50 open:shadow-[0_0_32px_rgba(196,30,36,0.12)]">
+              <summary class="cursor-pointer list-none px-5 py-4 text-[14px] font-semibold tracking-tight text-slate-200 transition-colors hover:text-white [&::-webkit-details-marker]:hidden">
                 <span class="flex items-start justify-between gap-2"><span>Lavorate sia a Torino sia in provincia?</span><span class="shrink-0 text-accent transition group-open:rotate-180" aria-hidden="true">▼</span></span>
               </summary>
-              <div class="border-t border-white/10 px-3 py-2.5 text-[12px] leading-relaxed text-silver">
+              <div class="border-t border-white/[0.08] px-5 py-4 text-[13px] leading-relaxed text-slate-300 [&_strong]:font-semibold [&_strong]:text-white">
                 Sì. Sul comune di Torino raggiungiamo tutti i quartieri. Anche sui comuni della Provincia di Torino concordiamo giorno e fascia al telefono, perché contano la distanza e il fatto che in città possiamo avere già interventi urgenti la stessa giornata. Nei casi pericolosi viene prima la messa in sicurezza sul quadro.
               </div>
             </details>
-            <details class="group rounded-xl border border-white/10 bg-graphite/90 open:border-accent/40">
-              <summary class="cursor-pointer list-none px-3 py-2.5 text-[13px] font-semibold text-white [&::-webkit-details-marker]:hidden">
+            <details class="glass-faq group overflow-hidden rounded-2xl border border-white/[0.1] bg-gradient-to-br from-white/[0.055] to-white/[0.02] backdrop-blur-md transition open:border-accent/50 open:shadow-[0_0_32px_rgba(196,30,36,0.12)]">
+              <summary class="cursor-pointer list-none px-5 py-4 text-[14px] font-semibold tracking-tight text-slate-200 transition-colors hover:text-white [&::-webkit-details-marker]:hidden">
                 <span class="flex items-start justify-between gap-2"><span>Posso contattarvi di notte o nei festivi per un guasto?</span><span class="shrink-0 text-accent transition group-open:rotate-180" aria-hidden="true">▼</span></span>
               </summary>
-              <div class="border-t border-white/10 px-3 py-2.5 text-[12px] leading-relaxed text-silver">
+              <div class="border-t border-white/[0.08] px-5 py-4 text-[13px] leading-relaxed text-slate-300 [&_strong]:font-semibold [&_strong]:text-white">
                 Sì per le situazioni serie: cortocircuiti, blackout parziali, salvavita che non tiene. In chiamata capiamo se serve arrivare subito o se prima servono indicazioni telefoniche per mettere in sicurezza. Quando il guasto è sotto controllo, le lavorazioni più ampie si programmano in un secondo momento, con chiarezza su tempi e documentazione.
               </div>
             </details>
-            <details class="group rounded-xl border border-white/10 bg-graphite/90 open:border-accent/40">
-              <summary class="cursor-pointer list-none px-3 py-2.5 text-[13px] font-semibold text-white [&::-webkit-details-marker]:hidden">
+            <details class="glass-faq group overflow-hidden rounded-2xl border border-white/[0.1] bg-gradient-to-br from-white/[0.055] to-white/[0.02] backdrop-blur-md transition open:border-accent/50 open:shadow-[0_0_32px_rgba(196,30,36,0.12)]">
+              <summary class="cursor-pointer list-none px-5 py-4 text-[14px] font-semibold tracking-tight text-slate-200 transition-colors hover:text-white [&::-webkit-details-marker]:hidden">
                 <span class="flex items-start justify-between gap-2"><span>Fate il preventivo al telefono prima del sopralluogo?</span><span class="shrink-0 text-accent transition group-open:rotate-180" aria-hidden="true">▼</span></span>
               </summary>
-              <div class="border-t border-white/10 px-3 py-2.5 text-[12px] leading-relaxed text-silver">
+              <div class="border-t border-white/[0.08] px-5 py-4 text-[13px] leading-relaxed text-slate-300 [&_strong]:font-semibold [&_strong]:text-white">
                 Su lavori piccoli e ripetibili (punti luce, prese, lettura quadro anche con foto) spesso diamo un'idea di ordine di grandezza. Se servono modifiche strutturali, nuove protezioni o molte derivazioni, il preventivo affidabile richiede sopralluogo: è questione di sicurezza e di responsabilità.
               </div>
             </details>
-            <details class="group rounded-xl border border-white/10 bg-graphite/90 open:border-accent/40">
-              <summary class="cursor-pointer list-none px-3 py-2.5 text-[13px] font-semibold text-white [&::-webkit-details-marker]:hidden">
+            <details class="glass-faq group overflow-hidden rounded-2xl border border-white/[0.1] bg-gradient-to-br from-white/[0.055] to-white/[0.02] backdrop-blur-md transition open:border-accent/50 open:shadow-[0_0_32px_rgba(196,30,36,0.12)]">
+              <summary class="cursor-pointer list-none px-5 py-4 text-[14px] font-semibold tracking-tight text-slate-200 transition-colors hover:text-white [&::-webkit-details-marker]:hidden">
                 <span class="flex items-start justify-between gap-2"><span>Dopo intervento fornite documentazione sull&apos;impianto?</span><span class="shrink-0 text-accent transition group-open:rotate-180" aria-hidden="true">▼</span></span>
               </summary>
-              <div class="border-t border-white/10 px-3 py-2.5 text-[12px] leading-relaxed text-silver">
+              <div class="border-t border-white/[0.08] px-5 py-4 text-[13px] leading-relaxed text-slate-300 [&_strong]:font-semibold [&_strong]:text-white">
                 Sì, in base alla commessa vi lasciamo quanto serve per ricordare cosa è stato fatto e con quali materiali — utile anche per chi manterrà l'impianto negli anni. Gli adempimenti obbligatori li concordiamo prima di partire, così non ci sono sorprese a fine lavoro.
               </div>
             </details>
-            <details class="group rounded-xl border border-white/10 bg-graphite/90 open:border-accent/40">
-              <summary class="cursor-pointer list-none px-3 py-2.5 text-[13px] font-semibold text-white [&::-webkit-details-marker]:hidden">
+            <details class="glass-faq group overflow-hidden rounded-2xl border border-white/[0.1] bg-gradient-to-br from-white/[0.055] to-white/[0.02] backdrop-blur-md transition open:border-accent/50 open:shadow-[0_0_32px_rgba(196,30,36,0.12)]">
+              <summary class="cursor-pointer list-none px-5 py-4 text-[14px] font-semibold tracking-tight text-slate-200 transition-colors hover:text-white [&::-webkit-details-marker]:hidden">
                 <span class="flex items-start justify-between gap-2"><span>Collaborate con amministratori e tecnici esterni in condominio?</span><span class="shrink-0 text-accent transition group-open:rotate-180" aria-hidden="true">▼</span></span>
               </summary>
-              <div class="border-t border-white/10 px-3 py-2.5 text-[12px] leading-relaxed text-silver">
+              <div class="border-t border-white/[0.08] px-5 py-4 text-[13px] leading-relaxed text-slate-300 [&_strong]:font-semibold [&_strong]:text-white">
                 Sì. Su parti comuni e ripartizioni tecniche lavoriamo in modo trasparente: verbali chiari quando servono e rapporti comprensibili per amministratori e tecnici. Se l'edificio ha un piano manutenzione pluriennale, lo teniamo presente nei tempi e nelle priorità concordate.
               </div>
             </details>
-            <details class="group rounded-xl border border-white/10 bg-graphite/90 open:border-accent/40">
-              <summary class="cursor-pointer list-none px-3 py-2.5 text-[13px] font-semibold text-white [&::-webkit-details-marker]:hidden">
+            <details class="glass-faq group overflow-hidden rounded-2xl border border-white/[0.1] bg-gradient-to-br from-white/[0.055] to-white/[0.02] backdrop-blur-md transition open:border-accent/50 open:shadow-[0_0_32px_rgba(196,30,36,0.12)]">
+              <summary class="cursor-pointer list-none px-5 py-4 text-[14px] font-semibold tracking-tight text-slate-200 transition-colors hover:text-white [&::-webkit-details-marker]:hidden">
                 <span class="flex items-start justify-between gap-2"><span>Come funziona il pagamento?</span><span class="shrink-0 text-accent transition group-open:rotate-180" aria-hidden="true">▼</span></span>
               </summary>
-              <div class="border-t border-white/10 px-3 py-2.5 text-[12px] leading-relaxed text-silver">
+              <div class="border-t border-white/[0.08] px-5 py-4 text-[13px] leading-relaxed text-slate-300 [&_strong]:font-semibold [&_strong]:text-white">
                 Di solito con bonifico o come decidiamo insieme al telefono. La fattura o la ricevuta la abbiamo in linea con il lavoro che avete affidato e con la legge.
               </div>
             </details>
@@ -637,40 +717,75 @@
         </div>
       </section>
 
-      <section id="contatti" class="bg-gradient-to-b from-steel to-graphite py-12 sm:py-16">
-        <div class="mx-auto flex max-w-6xl flex-col items-center px-3 text-center sm:px-5">
-          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Linea tecnica Boscolo</p>
-          <h2 class="mt-3 text-xl font-bold text-white sm:text-2xl">Contatto diretto — Boscolo</h2>
-          <div class="mt-6 flex w-full max-w-md flex-col gap-3">
-            <a href="tel:+39335637982" class="inline-flex min-h-[52px] items-center justify-center rounded-xl bg-accent px-6 text-[16px] font-bold text-white">335 637 982</a>
+      <section id="contatti" class="relative isolate overflow-hidden py-16 sm:py-20 md:py-28">
+        <div class="pointer-events-none absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900/98 to-black" aria-hidden="true"></div>
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-[radial-gradient(ellipse_80%_60%_at_50%_100%,rgba(196,30,36,0.18),transparent)]" aria-hidden="true"></div>
+        <div class="relative mx-auto flex max-w-6xl flex-col items-center px-3 text-center sm:px-5">
+          <div class="gradient-divider mb-10 w-full max-w-lg opacity-90"></div>
+          <p class="text-[11px] font-bold uppercase tracking-[0.22em] text-electric">Linea tecnica Boscolo</p>
+          <h2 class="section-heading mt-4 text-3xl font-bold text-white md:text-[2.15rem]">Contatto diretto — Boscolo</h2>
+          <p class="mt-4 max-w-xl text-[14px] text-slate-400">Un solo numero per guasti e commesse: spiegate il problema e concordiamo il passo successivo.</p>
+          <div class="mt-10 grid w-full max-w-2xl gap-4 sm:grid-cols-3">
+            <a href="tel:+39335637982" class="inline-flex min-h-[56px] items-center justify-center rounded-2xl bg-accent px-6 text-[15px] font-bold uppercase tracking-wide text-white shadow-glow transition hover:bg-accent-hover">335 637 982</a>
             <a
               href="https://wa.me/39335637982?text=Richiesta%20da%20elettricistaboscolo.it"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex min-h-[52px] items-center justify-center rounded-xl border border-emerald-500/50 bg-emerald-950/45 px-6 text-[16px] font-bold text-emerald-50"
+              class="inline-flex min-h-[56px] items-center justify-center rounded-2xl border border-emerald-400/45 bg-emerald-950/50 px-6 text-[15px] font-bold text-emerald-50 shadow-lg transition hover:border-emerald-300/60 hover:bg-emerald-900/55"
               >WhatsApp</a>
-            <a href="mailto:assistenzacaldaiepiemonte@gmail.com" class="inline-flex min-h-[52px] items-center justify-center rounded-xl border border-white/25 px-6 font-semibold">Email assistenza caldaie piemonte</a>
+            <a href="mailto:assistenzacaldaiepiemonte@gmail.com" class="inline-flex min-h-[56px] items-center justify-center rounded-2xl border border-white/20 bg-white/[0.04] px-6 text-[15px] font-semibold text-white backdrop-blur-sm transition hover:border-electric/45">Email</a>
           </div>
-          <address class="mt-8 max-w-lg text-[13px] not-italic leading-relaxed text-silver">
-            <strong class="text-white font-semibold">Telefono, email</strong>
-            <span class="mt-3 block rounded-xl border border-white/15 bg-graphite px-4 py-4 text-start shadow-card [&_a]:font-semibold [&_a]:text-white [&_a]:underline-offset-2 [&_a]:hover:underline">
-              <span class="block font-semibold text-white">Boscolo</span>
-              <span class="mt-2 block"><span class="text-silver">Tel</span> <a href="tel:+39335637982">+39 335 637 982</a></span>
-              <span class="mt-1 block"><span class="text-silver">Email</span> <a href="mailto:assistenzacaldaiepiemonte@gmail.com">assistenzacaldaiepiemonte@gmail.com</a></span>
-              <span class="mt-2 block"><span class="text-silver">Zone</span> Comune di Torino e Provincia di Torino (giorno e fascia concordati al telefono)</span>
-              <span class="mt-2 block"><span class="text-silver">Web</span> <a href="https://www.elettricistaboscolo.it/">elettricistaboscolo.it</a></span>
+          <address class="mt-12 w-full max-w-xl text-[13px] not-italic leading-relaxed text-slate-400">
+            <strong class="mb-1 block text-center text-[11px] font-bold uppercase tracking-[0.16em] text-slate-500">Dettagli attività</strong>
+            <span class="glass-section mt-3 block rounded-[1.35rem] px-6 py-6 text-start [&_a]:font-semibold [&_a]:text-white [&_a]:underline-offset-2 [&_a]:hover:text-electric [&_a]:hover:underline">
+              <span class="font-display text-lg font-bold tracking-wide text-white">Boscolo Impiantistica Torino</span>
+              <span class="mt-4 block"><span class="text-slate-500">Tel</span> <a href="tel:+39335637982">+39 335 637 982</a></span>
+              <span class="mt-2 block"><span class="text-slate-500">Email</span> <a href="mailto:assistenzacaldaiepiemonte@gmail.com">assistenzacaldaiepiemonte@gmail.com</a></span>
+              <span class="mt-3 block border-t border-white/[0.08] pt-3"><span class="text-slate-500">Zone</span> Comune di Torino e Provincia di Torino (giorno e fascia concordati al telefono)</span>
+              <span class="mt-2 block"><span class="text-slate-500">Web</span> <a href="https://www.elettricistaboscolo.it/">elettricistaboscolo.it</a></span>
             </span>
           </address>
         </div>
       </section>
     </main>
 
-    <footer class="border-t border-white/10 bg-ink py-6 text-center text-[11px] text-silver sm:py-8">
-      <p>© Boscolo. Elettricista su Torino e dintorni. Contatto sopra sul sito.</p>
-      <nav class="mt-3 flex flex-wrap justify-center gap-3">
-        <a href="tel:+39335637982" class="min-h-[44px] py-2 hover:text-white">Chiama</a>
-        <a href="privacy.html" rel="privacy-policy" class="py-2 hover:text-white">Privacy</a>
-      </nav>
+    <footer class="relative border-t border-white/[0.08] bg-gradient-to-b from-black via-[#050810] to-[#030712] text-slate-400">
+      <div class="gradient-divider opacity-95"></div>
+      <div class="mx-auto grid max-w-6xl gap-12 px-4 pb-14 pt-12 sm:px-6 lg:grid-cols-[1.2fr_auto_auto] lg:gap-10">
+        <div>
+          <p class="font-display text-2xl font-extrabold tracking-[0.12em] text-white">BOSCOLO</p>
+          <p class="mt-4 max-w-sm text-[13px] leading-relaxed text-slate-500">
+            Impiantista elettrico su Torino capitale e provincia: quadri sicuri, pronto intervento quando conta, predisposizioni per sicurezza e caldaie lato corrente.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="tel:+39335637982" class="inline-flex min-h-[46px] items-center justify-center rounded-xl bg-accent px-5 text-[13px] font-bold uppercase tracking-wide text-white shadow-glow transition hover:bg-accent-hover">335 637 982</a>
+            <a href="./torino-e-provincia/" class="inline-flex min-h-[46px] items-center justify-center rounded-xl border border-white/15 px-5 text-[12px] font-semibold uppercase tracking-wider text-slate-200 transition hover:border-electric/50 hover:text-white">Provincia</a>
+          </div>
+        </div>
+        <div>
+          <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-electric">Servizi</p>
+          <ul class="mt-4 space-y-2 text-[13px] font-medium" role="list">
+            <li><a href="./pronto-intervento/" class="block py-1 text-slate-400 transition hover:text-white">Pronto intervento</a></li>
+            <li><a href="./impianti-elettrici/" class="block py-1 text-slate-400 transition hover:text-white">Impianti e quadri</a></li>
+            <li><a href="./allarmi-sicurezza/" class="block py-1 text-slate-400 transition hover:text-white">Allarmi · CCTV</a></li>
+            <li><a href="./assistenza-caldaie/" class="block py-1 text-slate-400 transition hover:text-white">Caldaie · elettrico</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-electric">Sede &amp; legale</p>
+          <ul class="mt-4 space-y-2 text-[13px]" role="list">
+            <li>
+              <a href="https://maps.app.goo.gl/X644esZ8eEndJV3V8" target="_blank" rel="noopener noreferrer" class="text-slate-400 transition hover:text-white">Google Maps</a>
+            </li>
+            <li><a href="privacy.html" rel="privacy-policy" class="text-slate-400 transition hover:text-white">Privacy &amp; cookie</a></li>
+            <li><a href="mailto:assistenzacaldaiepiemonte@gmail.com" class="break-all text-slate-400 transition hover:text-white">Email ufficiale</a></li>
+          </ul>
+          <p class="mt-6 text-[11px] leading-relaxed text-slate-600">P.I. / dati fiscali: come da prassi inviati su richiesta dopo primo contatto lavorativo.</p>
+        </div>
+      </div>
+      <div class="border-t border-white/[0.06] bg-black/50 py-5 text-center">
+        <p class="text-[11px] text-slate-600">&copy; <time datetime="2026">2026</time> Boscolo. Elettricista Torino · Provincia di Torino · <span class="text-slate-500">elettricistaboscolo.it</span></p>
+      </div>
     </footer>
 
     <script defer>

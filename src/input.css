@@ -11,10 +11,17 @@
     html {
       scroll-behavior: auto;
     }
-    .animate-pulse-soft {
+
+    .animate-pulse-soft,
+    .animate-aurora {
       animation: none !important;
     }
+
     .squish-btn:active {
+      transform: none;
+    }
+
+    .card-spotlift:hover {
       transform: none;
     }
   }
@@ -29,16 +36,56 @@
     text-wrap: balance;
   }
 
-  /* Premium industrial brushed metal stripe */
+  /** Full-viewport cinematic backdrop */
+  .ambient-bg {
+    background-color: #030712;
+    background-image:
+      radial-gradient(ellipse 120% 90% at 15% -10%, rgba(196, 30, 36, 0.34), transparent 52%),
+      radial-gradient(ellipse 100% 70% at 95% 5%, rgba(34, 211, 238, 0.16), transparent 48%),
+      radial-gradient(ellipse 80% 55% at 50% 110%, rgba(196, 30, 36, 0.11), transparent 55%),
+      linear-gradient(180deg, #020617 0%, #0f172a 42%, #020617 100%);
+  }
+
+  .ambient-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+      radial-gradient(ellipse at center, transparent 55%, rgba(2, 6, 23, 0.85) 100%);
+    background-size: 72px 72px, 72px 72px, 100% 100%;
+    mask-image: radial-gradient(ellipse 85% 70% at 50% 38%, black 22%, transparent 72%);
+    -webkit-mask-image: radial-gradient(ellipse 85% 70% at 50% 38%, black 22%, transparent 72%);
+  }
+
+  .ambient-orb {
+    background: radial-gradient(circle at 35% 30%, rgba(34, 211, 238, 0.14), transparent 58%);
+    filter: blur(2px);
+  }
+
+  .glass-nav {
+    @apply border-b border-white/[0.08] bg-slate-950/70 backdrop-blur-xl backdrop-saturate-150;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04), inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .glass-section {
+    @apply border border-white/[0.08] bg-white/[0.03] backdrop-blur-md;
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.05),
+      0 4px 32px rgba(0, 0, 0, 0.25);
+  }
+
+  /** Legacy hero stripe — optional */
   .hero-grid {
     background-image:
-      linear-gradient(135deg, rgba(10, 15, 20, 0.92), rgba(10, 15, 20, 0.82)),
-      linear-gradient(
-        90deg,
-        rgba(59, 67, 80, 0.15) 0%,
-        rgba(59, 67, 80, 0.05) 50%,
-        rgba(59, 67, 80, 0.15) 100%
-      );
+      linear-gradient(155deg, rgba(3, 7, 18, 0.95) 0%, rgba(15, 23, 42, 0.55) 50%, rgba(3, 7, 18, 0.92) 100%);
+  }
+
+  .section-heading {
+    @apply font-display text-balance tracking-tight;
+  }
+
+  .gradient-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(34, 211, 238, 0.35), rgba(196, 30, 36, 0.45), transparent);
   }
 
   .squish-btn {
@@ -49,4 +96,20 @@
   .squish-btn:active {
     transform: scale(0.93);
   }
+
+  .card-spotlift {
+    @apply transition duration-300 ease-out;
+  }
+
+  .card-spotlift:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 0 0 1px rgba(34, 211, 238, 0.12),
+      0 20px 50px rgba(0, 0, 0, 0.45);
+  }
+
+  details.glass-faq[open] summary {
+    color: rgb(255 255 255);
+  }
+
 }
