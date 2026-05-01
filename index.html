@@ -17,8 +17,8 @@
     <link rel="alternate" hreflang="x-default" href="https://www.elettricistaboscolo.it/" />
     <meta name="geo.region" content="IT-TO" />
     <meta name="geo.placename" content="Torino" />
-    <meta name="geo.position" content="45.070982;7.685396" />
-    <meta name="ICBM" content="45.070982, 7.685396" />
+    <meta name="geo.position" content="45.0703;7.6868" />
+    <meta name="ICBM" content="45.0703, 7.6868" />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
     <link rel="dns-prefetch" href="https://wa.me" />
@@ -54,34 +54,57 @@
             "@type": "WebSite",
             "@id": "https://www.elettricistaboscolo.it/#website",
             "url": "https://www.elettricistaboscolo.it/",
-            "name": "Boscolo Elettricista Torino",
-            "description": "Pronto intervento elettrico 24h a Torino con Boscolo Elettricista — quadro ordinato in sicurezza, allarmi, automazioni e collegamenti caldaia.",
+            "name": "Nicola Boscolo Elettricista Torino",
+            "alternateName": "Boscolo Elettricista Torino",
+            "description": "Pronto intervento elettrico sul quadro, guasti, allarmi, automazioni e collegamenti caldaia — Torino e Provincia.",
             "inLanguage": "it-IT",
             "publisher": { "@id": "https://www.elettricistaboscolo.it/#business" }
           },
           {
             "@type": ["Electrician", "LocalBusiness"],
             "@id": "https://www.elettricistaboscolo.it/#business",
-            "image": ["https://www.elettricistaboscolo.it/assets/images/og-boscolo-share.webp"],
-            "name": "Boscolo Elettricista",
-            "alternateName": ["Boscolo Impiantistica Torino", "Elettricista Boscolo Torino"],
+            "name": "Nicola Boscolo Elettricista Torino",
+            "alternateName": ["Boscolo Elettricista", "Boscolo Impiantistica Torino", "Elettricista Boscolo Torino"],
+            "image": [
+              "https://www.elettricistaboscolo.it/assets/images/cat-quadri-ordinati.webp",
+              "https://www.elettricistaboscolo.it/assets/images/og-boscolo-share.webp"
+            ],
             "url": "https://www.elettricistaboscolo.it/",
             "telephone": "+39335637982",
             "email": "assistenzacaldaiepiemonte@gmail.com",
             "priceRange": "€€",
-            "description": "Boscolo Elettricista su Torino e provincia: guasti sul quadro, rifacimento impianto, predisposizioni allarmi e TVCC, automazioni domestiche e collegamenti elettrici su caldaia.",
+            "currenciesAccepted": "EUR",
+            "description": "Elettricista operativo su Torino e Provincia: pronto intervento, rinnovamento quadri, predisposizioni allarmi/TVCC, automazioni domestiche e collegamenti elettrici sulla caldaia.",
             "address": {
               "@type": "PostalAddress",
               "addressLocality": "Torino",
-              "addressRegion": "TO",
+              "addressRegion": "Piemonte",
               "addressCountry": "IT"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": 45.070982,
-              "longitude": 7.685396
+              "latitude": 45.0703,
+              "longitude": 7.6868
             },
-            "areaServed": [{ "@type": "City", "name": "Torino" }, { "@type": "AdministrativeArea", "name": "Provincia di Torino" }],
+            "areaServed": [
+              { "@type": "City", "name": "Torino" },
+              { "@type": "AdministrativeArea", "name": "Provincia di Torino", "alternateName": "Torino e Provincia" }
+            ],
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "00:00",
+                "closes": "23:59"
+              }
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+39335637982",
+              "contactType": "customer service",
+              "availableLanguage": "Italian",
+              "areaServed": "IT"
+            },
             "sameAs": ["https://maps.app.goo.gl/X644esZ8eEndJV3V8"]
           }
         ]
