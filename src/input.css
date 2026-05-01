@@ -24,10 +24,16 @@
     .card-spotlift:hover {
       transform: none;
     }
+
+    .elite-breathe,
+    .animate-pulse-cta,
+    .animate-ping {
+      animation: none !important;
+    }
   }
 
   ::selection {
-    @apply bg-accent/35 text-white;
+    @apply bg-elite-gold/30 text-white;
   }
 }
 
@@ -112,4 +118,52 @@
     color: rgb(255 255 255);
   }
 
+  /* Elite Edition — vetro sfumato + badge oro */
+  .elite-glass-card {
+    @apply relative overflow-hidden rounded-3xl border border-white/[0.1] bg-white/[0.04] backdrop-blur-xl backdrop-saturate-150;
+    box-shadow:
+      0 24px 64px rgba(0, 0, 0, 0.45),
+      inset 0 1px 0 rgba(251, 191, 36, 0.12),
+      0 0 0 1px rgba(251, 191, 36, 0.06);
+  }
+
+  .elite-glass-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    pointer-events: none;
+    opacity: 0.35;
+    background: linear-gradient(
+      135deg,
+      rgba(251, 191, 36, 0.22) 0%,
+      transparent 38%,
+      transparent 62%,
+      rgba(255, 255, 255, 0.06) 100%
+    );
+  }
+
+  .elite-badge-gold {
+    @apply inline-flex items-center gap-2 rounded-full px-5 py-2 text-xs font-bold uppercase tracking-[0.22em];
+    border: 1px solid rgba(212, 160, 19, 0.55);
+    color: #fef3c7;
+    background-image: linear-gradient(
+      to right,
+      rgba(251, 191, 36, 0.15),
+      rgba(253, 230, 138, 0.12),
+      rgba(251, 191, 36, 0.15)
+    );
+    box-shadow:
+      0 0 24px rgba(251, 191, 36, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  }
+
+  .elite-zone-pill {
+    @apply rounded-full border border-elite-gold/25 bg-white/[0.03] px-4 py-2 text-center text-xs font-semibold uppercase tracking-wider text-elite-muted transition hover:border-elite-gold/50 hover:text-white;
+  }
+
+  .elite-skip {
+    @apply absolute left-4 top-4 z-[100] -translate-y-24 rounded-lg bg-elite-gold px-4 py-2 text-sm font-bold text-elite-bg transition focus:translate-y-0 focus:outline-none focus:ring-2 focus:ring-white;
+  }
 }
+
