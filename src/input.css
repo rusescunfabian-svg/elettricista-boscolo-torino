@@ -27,7 +27,8 @@
 
     .elite-breathe,
     .animate-pulse-cta,
-    .animate-ping {
+    .animate-ping,
+    .animate-lux-glow {
       animation: none !important;
     }
   }
@@ -127,6 +128,26 @@
       0 0 0 1px rgba(251, 191, 36, 0.06);
   }
 
+  /** Glassmorphism luxury — più vetro, più blur */
+  .elite-glass-luxury {
+    @apply relative isolate border-white/[0.14] bg-gradient-to-br from-white/[0.09] to-white/[0.03] backdrop-blur-2xl backdrop-saturate-150;
+    box-shadow:
+      0 32px 80px rgba(0, 0, 0, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.14),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.35),
+      0 0 0 1px rgba(251, 191, 36, 0.08);
+  }
+
+  .elite-glass-luxury::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(165deg, rgba(255, 255, 255, 0.07) 0%, transparent 42%, transparent 78%, rgba(251, 191, 36, 0.04) 100%);
+  }
+
   .elite-glass-card::before {
     content: '';
     position: absolute;
@@ -165,5 +186,61 @@
   .elite-skip {
     @apply absolute left-4 top-4 z-[100] -translate-y-24 rounded-lg bg-elite-gold px-4 py-2 text-sm font-bold text-elite-bg transition focus:translate-y-0 focus:outline-none focus:ring-2 focus:ring-white;
   }
-}
 
+  /* CTA glow static fallback + animazione Tailwind animate-lux-glow quando attiva */
+  .lux-cta-ring {
+    box-shadow:
+      0 0 0 1px rgba(251, 191, 36, 0.6),
+      0 0 36px rgba(251, 191, 36, 0.5),
+      0 0 88px rgba(251, 191, 36, 0.2),
+      0 14px 44px rgba(0, 0, 0, 0.55);
+  }
+
+  /** Bento: angoli molto arrotondati */
+  .lux-bento-cell {
+    border-radius: 2.75rem;
+  }
+
+  @media (min-width: 1024px) {
+    .lux-bento-root {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      grid-template-rows: minmax(12rem, 1fr) minmax(12rem, 1fr) auto;
+      gap: 1.75rem;
+      align-items: stretch;
+    }
+    .lux-bento-a {
+      grid-column: 1 / span 7;
+      grid-row: 1 / span 2;
+      min-height: clamp(22rem, 44vh, 32rem);
+    }
+    .lux-bento-b {
+      grid-column: 8 / span 5;
+      grid-row: 1;
+      min-height: clamp(11rem, 22vh, 15rem);
+    }
+    .lux-bento-c {
+      grid-column: 8 / span 5;
+      grid-row: 2;
+      min-height: clamp(11rem, 22vh, 15rem);
+    }
+    .lux-bento-d {
+      grid-column: 1 / span 12;
+      grid-row: 3;
+      min-height: clamp(14rem, 28vh, 20rem);
+    }
+  }
+
+  .lux-hero-display {
+    font-weight: 900;
+    letter-spacing: -0.035em;
+    line-height: 0.95;
+    font-size: clamp(2.875rem, 11.5vw, 7.25rem);
+  }
+
+  @media (max-width: 639px) {
+    .lux-bento-cell {
+      border-radius: 2rem;
+    }
+  }
+}

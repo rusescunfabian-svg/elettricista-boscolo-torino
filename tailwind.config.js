@@ -48,6 +48,7 @@ module.exports = {
         'pulse-soft': 'pulse-soft 2.2s ease-in-out infinite',
         aurora: 'aurora-shift 22s ease-in-out infinite alternate',
         'pulse-cta': 'pulse-cta-elite 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'lux-glow': 'lux-glow-pulse 3.2s ease-in-out infinite',
       },
       keyframes: {
         'pulse-soft': {
@@ -61,6 +62,16 @@ module.exports = {
         'pulse-cta-elite': {
           '0%, 100%': { transform: 'scale(1)', opacity: '0.55' },
           '50%': { transform: 'scale(1.45)', opacity: '0' },
+        },
+        'lux-glow-pulse': {
+          '0%, 100%': {
+            boxShadow:
+              '0 0 0 1px rgba(251,191,36,0.55), 0 0 32px rgba(251,191,36,0.5), 0 0 72px rgba(251,191,36,0.22), 0 16px 48px rgba(0,0,0,0.55)',
+          },
+          '50%': {
+            boxShadow:
+              '0 0 0 1px rgba(254,240,138,0.75), 0 0 48px rgba(251,191,36,0.65), 0 0 100px rgba(251,191,36,0.35), 0 20px 56px rgba(0,0,0,0.6)',
+          },
         },
       },
     },
