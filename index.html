@@ -111,7 +111,7 @@
       }
     </script>
   </head>
-  <body class="min-h-svh bg-elite-bg font-sans text-white antialiased">
+  <body class="min-h-svh bg-elite-bg pb-24 font-sans text-white antialiased md:pb-0">
     <a class="elite-skip" href="#contenuto-principale">Salta al contenuto</a>
     <header
       class="sticky top-0 z-50 border-b border-white/10 bg-elite-bg/85 backdrop-blur-xl backdrop-saturate-150"
@@ -124,17 +124,38 @@
         </a>
         <nav class="flex flex-wrap items-center gap-2 text-[11px] font-semibold uppercase tracking-wider sm:gap-4 sm:text-xs" aria-label="Sezioni principali">
           <a href="#servizi" class="rounded-lg px-2 py-2 text-elite-muted transition hover:text-white sm:px-3">Servizi</a>
-          <a href="#silos" class="rounded-lg px-2 py-2 text-elite-muted transition hover:text-white sm:px-3">Silos</a>
           <a href="#aree" class="rounded-lg px-2 py-2 text-elite-muted transition hover:text-white sm:px-3">Aree</a>
           <a href="#lavori" class="rounded-lg px-2 py-2 text-elite-muted transition hover:text-white sm:px-3">Portfolio</a>
           <a href="#mappa" class="rounded-lg px-2 py-2 text-elite-muted transition hover:text-white sm:px-3">Mappa</a>
         </nav>
-        <a
-          href="tel:+39335637982"
-          class="inline-flex min-h-[48px] items-center justify-center rounded-xl border border-elite-gold/40 bg-elite-gold/10 px-4 text-sm font-bold text-elite-gold transition hover:border-elite-gold hover:bg-elite-gold/20"
-        >
-          335&nbsp;637&nbsp;982
-        </a>
+        <div class="flex flex-wrap items-center justify-end gap-2">
+          <a
+            href="tel:+39335637982"
+            class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl border border-elite-gold/40 bg-elite-gold/10 px-3 text-xs font-black uppercase tracking-wide text-elite-gold transition hover:border-elite-gold hover:bg-elite-gold/20 sm:px-4 sm:text-sm"
+            aria-label="Chiama ora 335 637 982"
+          >
+            <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+              />
+            </svg>
+            <span>CHIAMA ORA</span>
+          </a>
+          <a
+            href="https://wa.me/39335637982?text=Urgente%20elettrico%20Boscolo%20Elettricista"
+            class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-xl border border-emerald-500/40 bg-emerald-950/50 px-3 text-xs font-black uppercase tracking-wide text-emerald-100 transition hover:border-emerald-400 sm:px-4 sm:text-sm"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="WhatsApp Boscolo Elettricista"
+          >
+            <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            <span class="hidden sm:inline">WhatsApp</span>
+          </a>
+        </div>
       </div>
     </header>
     <main id="contenuto-principale">
@@ -165,42 +186,44 @@
                 <span class="mt-2 block text-white drop-shadow-[0_4px_24px_rgba(0,0,0,.6)]">a Torino</span>
               </p>
             </div>
-            <p class="mt-8 max-w-xl text-base font-normal leading-relaxed text-elite-muted/95 sm:text-lg lg:max-w-2xl">
-              Quadri che non mentono: guasti fermi sul differenziale, nuove derive pulite in cucina-bagno, alimentazioni per antifurti che reggono appena installi la centrale —
-              <strong class="font-semibold text-white">stesso giorno quando il traffico consente.</strong>
+            <p class="mt-8 max-w-xl text-base font-semibold leading-relaxed text-white/95 sm:text-lg lg:max-w-2xl">
+              Lavoro pulito sul quadro, risposta rapida: siamo a due squilli da te — fissiamo l&apos;intervento e arriviamo con strumenti e mestiere.
             </p>
-            <div class="mt-10 flex flex-col gap-8 sm:flex-row sm:items-center sm:gap-12">
-              <span class="elite-badge-gold" role="presentation">30 anni di esperienza</span>
-              <div class="relative isolate flex items-center">
-                <span class="elite-breathe pointer-events-none absolute inset-[-16px] -z-10 rounded-full bg-elite-gold/25 blur-2xl" aria-hidden="true"></span>
+            <div class="mt-8 flex flex-col gap-4">
+              <span class="elite-badge-gold w-fit" role="presentation">30 anni di esperienza</span>
+              <div class="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+                <div class="relative isolate inline-flex">
+                  <span class="elite-breathe pointer-events-none absolute inset-[-16px] -z-10 rounded-full bg-elite-gold/25 blur-2xl" aria-hidden="true"></span>
+                  <a
+                    href="tel:+39335637982"
+                    class="squish-btn lux-cta-ring animate-lux-glow relative inline-flex min-h-[58px] items-center justify-center gap-3 rounded-full px-8 text-[13px] font-black uppercase tracking-[0.18em] sm:px-10"
+                    style="background: linear-gradient(180deg, #fef08a 0%, #fbbf24 52%, #d97706 100%); color: #0f0f0f;"
+                    aria-label="Chiama ora 335 637 982"
+                  >
+                    <svg class="h-6 w-6 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                      />
+                    </svg>
+                    CHIAMA ORA
+                  </a>
+                </div>
                 <a
-                  href="tel:+39335637982"
-                  class="squish-btn lux-cta-ring animate-lux-glow relative inline-flex min-h-[58px] items-center justify-center rounded-full px-10 text-[13px] font-black uppercase tracking-[0.2em]"
-                  style="background: linear-gradient(180deg, #fef08a 0%, #fbbf24 52%, #d97706 100%); color: #0f0f0f;"
+                  href="https://wa.me/39335637982?text=Urgente%20elettrico%20Boscolo%20Elettricista"
+                  class="inline-flex min-h-[58px] items-center justify-center gap-3 rounded-full border-2 border-emerald-400/50 bg-emerald-950/50 px-8 text-[13px] font-black uppercase tracking-[0.15em] text-emerald-100 transition hover:border-emerald-300 hover:bg-emerald-900/60 sm:px-10"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label="WhatsApp Boscolo Elettricista"
                 >
-                  Pronto intervento
+                  <svg class="h-6 w-6 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                    />
+                  </svg>
+                  WhatsApp
                 </a>
               </div>
-              <div class="text-sm leading-relaxed text-elite-muted">
-                <strong class="block font-bold text-white">Linea tecnica sempre attiva.</strong>
-                Oppure WhatsApp quando serve una foto dal quadro.
-              </div>
-            </div>
-            <div class="mt-10 flex flex-wrap gap-3">
-              <a
-                href="tel:+39335637982"
-                class="inline-flex min-h-[48px] items-center justify-center rounded-xl border border-white/20 bg-white/5 px-6 text-sm font-bold text-white transition hover:border-elite-gold hover:text-elite-gold"
-              >
-                Chiama ora +39 335 637 982
-              </a>
-              <a
-                href="https://wa.me/39335637982?text=Urgente%20elettrico%20Boscolo%20Elettricista"
-                class="inline-flex min-h-[48px] items-center justify-center rounded-xl border border-emerald-500/30 bg-emerald-950/40 px-6 text-sm font-bold text-emerald-100 transition hover:border-emerald-400"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                WhatsApp
-              </a>
+              <p class="text-sm text-elite-muted">335 637 982 · anche foto del quadro su WhatsApp per capire subito la situazione.</p>
             </div>
           </div>
           </div>
@@ -213,11 +236,8 @@
             <header class="shrink-0 lg:sticky lg:top-32 lg:w-[min(34%,22rem)] lg:self-start xl:w-[26%]">
             <p class="text-[11px] font-black uppercase tracking-[0.42em] text-elite-gold/70">Portfolio servizi</p>
             <h2 id="servizi-h2" class="mt-5 font-display text-[clamp(1.65rem,3.5vw,2.85rem)] font-black uppercase leading-[1.08] tracking-tight text-white">
-              Servizi <span class="text-elite-gold">elettricista</span> luxury a Torino
+              Servizi <span class="text-elite-gold">elettricista</span> a Torino
             </h2>
-            <p class="mt-6 text-sm leading-relaxed text-elite-muted">
-              Layout asimmetrico: quattro mestieri sul quadro, con vetro contemporaneo e approccio sartoriale su città e provincia.
-            </p>
             </header>
           <div class="min-w-0 flex-1">
           <div class="grid gap-6 lg:grid-cols-12 lg:gap-x-8 lg:gap-y-10">
@@ -292,7 +312,7 @@
             <span class="text-elite-gold">Elettricista</span> sul territorio — <span class="text-white">Torino</span> quartiere per quartiere
           </h2>
           <p class="mt-4 max-w-3xl text-elite-muted">
-            Il traffico decide i tempi, non lo slogan: lavoriamo ovunque in città; elenchiamo i quartieri che sentiamo più spesso in chiamata.
+            Operiamo su tutta la città e in provincia: organizzazione chiara, priorità alle urgenze, tempi concordati al telefono in base a zona e carico di lavoro.
           </p>
           <ul
             class="mt-12 grid list-none grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
@@ -335,11 +355,10 @@
         <div class="pointer-events-none absolute left-1/2 top-0 h-[1px] w-[120%] -translate-x-1/2 bg-gradient-to-r from-transparent via-elite-gold/30 to-transparent" aria-hidden="true"></div>
         <div class="mx-auto max-w-[1540px] px-4 sm:px-6 lg:px-10">
           <div class="max-w-[46rem]">
-          <p class="text-[11px] font-black uppercase tracking-[0.4em] text-elite-gold/70">Bento gallery</p>
+          <p class="text-[11px] font-black uppercase tracking-[0.4em] text-elite-gold/70">Portfolio</p>
           <h2 id="lavori-h2" class="mt-5 font-display text-[clamp(1.55rem,3.2vw,2.85rem)] font-black uppercase leading-[1.1] tracking-tight text-white">
-            Elettricista <span class="text-elite-gold">luxury</span> — portfolio cantieri Torino
+            Elettricista <span class="text-elite-gold">Boscolo</span> — cantieri e interventi a Torino
           </h2>
-          <p class="mt-5 max-w-2xl text-sm leading-relaxed text-elite-muted">Griglia tipo bento moderna con angoli ampiamente arrotondati: foto sostituibili con scatti reali da cantiere.</p>
           </div>
 
           <div class="lux-bento-root mt-14 grid grid-cols-1 gap-5">
@@ -414,8 +433,7 @@
               Mappa e copertura <span class="text-elite-gold">elettricista Torino</span>
             </h2>
             <p class="mt-4 text-elite-muted">
-              Sedime segnata sulla
-              <a href="https://maps.app.goo.gl/X644esZ8eEndJV3V8" class="font-semibold text-elite-gold underline-offset-2 hover:underline" target="_blank" rel="noopener noreferrer">scheda Google Maps pubblica Boscolo Elettricista</a>.
+              <a href="https://maps.app.goo.gl/X644esZ8eEndJV3V8" class="font-semibold text-elite-gold underline-offset-2 hover:underline" target="_blank" rel="noopener noreferrer">Apri la posizione su Google Maps</a>
             </p>
             <iframe
               title="Mappa Boscolo Elettricista Torino"
@@ -436,7 +454,7 @@
               </div>
               <div>
                 <dt class="text-[11px] font-black uppercase tracking-widest text-elite-gold">Telefono</dt>
-                <dd class="mt-1"><a href="tel:+39335637982" class="text-xl font-black text-white hover:text-elite-gold">335 637 982</a> (prefisso Italia +39)</dd>
+                <dd class="mt-1"><a href="tel:+39335637982" class="text-xl font-black text-white hover:text-elite-gold">335 637 982</a></dd>
               </div>
               <div>
                 <dt class="text-[11px] font-black uppercase tracking-widest text-elite-gold">Email</dt>
@@ -444,7 +462,7 @@
               </div>
               <div>
                 <dt class="text-[11px] font-black uppercase tracking-widest text-elite-gold">Zona legale</dt>
-                <dd class="mt-1">Operatività dalla Città Metropolitana di Torino (Italia).</dd>
+                <dd class="mt-1">Operatività: Città Metropolitana di Torino, Piemonte.</dd>
               </div>
             </dl>
             <nav class="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-[11px] font-bold uppercase tracking-wider text-elite-muted" aria-label="Link secondari">
@@ -459,5 +477,35 @@
         </p>
       </footer>
     </main>
+    <aside
+      class="fixed bottom-0 left-0 right-0 z-50 flex gap-2 border-t border-white/10 bg-elite-bg/95 p-3 backdrop-blur-xl md:hidden"
+      aria-label="CHIAMA ORA o WhatsApp"
+    >
+      <a
+        href="tel:+39335637982"
+        class="flex flex-1 min-h-[48px] items-center justify-center gap-2 rounded-xl font-sans text-[11px] font-black uppercase tracking-wide text-elite-bg"
+        style="background: linear-gradient(180deg, #fef08a 0%, #fbbf24 52%, #d97706 100%);"
+      >
+        <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path
+            d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+          />
+        </svg>
+        CHIAMA ORA
+      </a>
+      <a
+        href="https://wa.me/39335637982?text=Urgente%20elettrico%20Boscolo%20Elettricista"
+        class="flex flex-1 min-h-[48px] items-center justify-center gap-2 rounded-xl border border-emerald-500/40 bg-emerald-950/80 text-[11px] font-black uppercase tracking-wide text-emerald-100"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+          />
+        </svg>
+        WhatsApp
+      </a>
+    </aside>
   </body>
 </html>
