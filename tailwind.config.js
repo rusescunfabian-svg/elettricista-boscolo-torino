@@ -20,7 +20,6 @@ module.exports = {
       },
       fontFamily: {
         sans: [
-          'Montserrat',
           'Inter',
           'ui-sans-serif',
           'system-ui',
@@ -31,7 +30,7 @@ module.exports = {
           'Arial',
           'sans-serif',
         ],
-        display: ['Montserrat', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['"Playfair Display"', 'Georgia', 'Cambria', 'Times New Roman', 'serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

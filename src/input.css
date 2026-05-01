@@ -196,7 +196,40 @@
       0 14px 44px rgba(0, 0, 0, 0.55);
   }
 
-  /** Bento: angoli molto arrotondati */
+  /** Bordo a gradient — wrapper 1px + interno glass */
+  .lux-gradient-border {
+    position: relative;
+    padding: 1px;
+    border-radius: 2.75rem;
+    background: linear-gradient(
+      138deg,
+      rgba(251, 191, 36, 0.95) 0%,
+      rgba(254, 240, 138, 0.55) 28%,
+      rgba(251, 191, 36, 0.4) 52%,
+      rgba(255, 255, 255, 0.22) 78%,
+      rgba(251, 191, 36, 0.35) 100%
+    );
+    box-shadow: 0 28px 70px rgba(0, 0, 0, 0.55);
+  }
+
+  .lux-gradient-border-inner {
+    height: 100%;
+    overflow: hidden;
+    border-radius: calc(2.75rem - 1px);
+    background: rgba(15, 15, 15, 0.92);
+    backdrop-filter: blur(10px);
+  }
+
+  .lux-gradient-border--md {
+    border-radius: 2rem;
+    box-shadow: 0 22px 48px rgba(0, 0, 0, 0.42);
+  }
+
+  .lux-gradient-border--md .lux-gradient-border-inner {
+    border-radius: calc(2rem - 1px);
+  }
+
+  /** Bento: angoli esterni (coordinate con gradient border) */
   .lux-bento-cell {
     border-radius: 2.75rem;
   }
@@ -232,15 +265,26 @@
   }
 
   .lux-hero-display {
-    font-weight: 900;
-    letter-spacing: -0.035em;
-    line-height: 0.95;
-    font-size: clamp(2.875rem, 11.5vw, 7.25rem);
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+    font-size: clamp(2.875rem, 11.5vw, 7rem);
+    text-transform: none;
   }
 
   @media (max-width: 639px) {
-    .lux-bento-cell {
+    .lux-bento-cell,
+    .lux-gradient-border {
       border-radius: 2rem;
+    }
+
+    .lux-gradient-border-inner {
+      border-radius: calc(2rem - 1px);
+    }
+
+    .lux-gradient-border--md .lux-gradient-border-inner {
+      border-radius: calc(2rem - 1px);
     }
   }
 }
